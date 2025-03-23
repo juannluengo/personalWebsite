@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  output: 'export',  // Enable static exports
   images: {
     unoptimized: true,
     domains: [
@@ -32,6 +32,8 @@ const nextConfig = {
       },
     ],
   },
+  // Add basePath for GitHub Pages (replace 'your-repo-name' with your actual repo name)
+  basePath: process.env.NODE_ENV === 'production' ? '/personalWebsite' : '',
 };
 
 export default nextConfig;

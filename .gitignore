@@ -1,6 +1,6 @@
 # Image files
-*.jpg
-*.png
+# *.jpg
+# *.png
 
 # Build and cache directories
 cache
