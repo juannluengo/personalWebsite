@@ -38,7 +38,7 @@ jobs:
           pwd
           echo "\nAll directory contents:"
           ls -la
-          echo "\nChecking out directory contents:"
+          echo "\nChecking out directory:"
           ls -la out || echo "out directory not found"
           if [ -d "out" ]; then
             echo "\nListing all files in out directory:"
