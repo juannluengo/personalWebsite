@@ -7,6 +7,9 @@ const nextConfig = {
   assetPrefix: process.env.NODE_ENV === 'production' ? `/${repo}/` : '',
   reactStrictMode: true,
   images: {
+    unoptimized: true,
+    loader: 'custom',
+    loaderFile: './src/image-loader.js',
     domains: [
       'is1-ssl.mzstatic.com',
       'is2-ssl.mzstatic.com',
@@ -46,7 +49,6 @@ const nextConfig = {
         pathname: '**',
       },
     ],
-    unoptimized: true,
   },
 };
 

@@ -15,7 +15,7 @@ const HeroCarousel = () => {
             <div className="relative w-[80%] h-[80%] max-w-[500px] max-h-[600px]">
               <div className="absolute inset-0 w-full h-full z-10 bg-gradient-to-r from-transparent via-black/0 to-black pointer-events-none"></div>
               <Image
-                src="/images/profile/profile-placeholder.jpg" // Updated path to the profile image
+                src="/images/profile/profile-placeholder.JPG" // Updated path to the profile image
                 alt="Your Name"
                 fill
                 priority
