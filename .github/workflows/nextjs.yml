@@ -28,15 +28,40 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build with Next.js
-        run: npm run build
-      - name: Debug directory structure
         run: |
-          echo "Current directory:"
+          echo "Building Next.js app..."
+          npm run build
+          echo "Build completed"
+      - name: Debug build output
+        run: |
+          echo "Current working directory:"
           pwd
-          echo "\nDirectory contents:"
+          echo "\nAll directory contents:"
           ls -la
-          echo "\nChecking build output:"
+          echo "\nChecking .next directory:"
+          ls -la .next || echo ".next directory not found"
+          echo "\nChecking out directory:"
           ls -la out || echo "out directory not found"
+          echo "\nChecking dist directory:"
+          ls -la dist || echo "dist directory not found"
+          echo "\nChecking build directory:"
+          ls -la build || echo "build directory not found"
+          echo "\nChecking node_modules/.next directory:"
+          ls -la node_modules/.next || echo "node_modules/.next directory not found"
+      - name: Copy build output
+        run: |
+          if [ -d "out" ]; then
+            echo "out directory exists"
+          elif [ -d ".next/standalone" ]; then
+            echo "copying from .next/standalone"
+            cp -r .next/standalone out
+          elif [ -d ".next" ]; then
+            echo "copying from .next"
+            cp -r .next out
+          else
+            echo "No build output found"
+            exit 1
+          fi
       - name: Upload build output
         uses: actions/upload-artifact@v4
         with:
