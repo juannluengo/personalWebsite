@@ -2,26 +2,11 @@
 const nextConfig = {
   output: 'export',  // Enable static exports
   distDir: 'out',
+  // Configure images for static export
   images: {
+    loader: 'custom',
+    loaderFile: './image-loader.js',
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "source.unsplash.com",
-      },
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-      },
-      {
-        protocol: "https",
-        hostname: "ext.same-assets.com",
-      },
-      {
-        protocol: "https",
-        hostname: "ugc.same-assets.com",
-      },
-    ],
   },
   // Add basePath for GitHub Pages (replace 'your-repo-name' with your actual repo name)
   basePath: process.env.NODE_ENV === 'production' ? '/personalWebsite' : '',
