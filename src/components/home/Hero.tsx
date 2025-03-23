@@ -30,7 +30,9 @@ const Hero = () => {
                 bg-gradient-to-t from-black/40 via-transparent to-black/40"></div>
                 
               <Image
-                src="/images/profile/profile-placeholder.JPG"
+                src={process.env.NODE_ENV === 'production' 
+                  ? '/personalWebsite/images/profile/profile-placeholder.JPG'
+                  : '/images/profile/profile-placeholder.JPG'}
                 alt="Your Name"
                 fill
                 priority
