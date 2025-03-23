@@ -1,35 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
+
+A modern, responsive personal portfolio website inspired by the Apple TV+ design aesthetic. This project is built with Next.js and Tailwind CSS, featuring smooth animations and a sleek user interface.
+
+## Features
+
+- Modern, responsive design
+- Animated hero section with profile image and introduction
+- Work experience and education sections
+- Skills showcase
+- Project portfolio
+- Contact section
+
+## Technologies
+
+- Next.js 15+
+- React 18
+- TypeScript
+- Tailwind CSS
+- Shadcn UI Components
+- PostCSS & Autoprefixer
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ installed on your machine
+- npm or yarn package manager
+
+### Installation
+
+You can use the setup script to install dependencies and start the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Make the setup script executable
+chmod +x setup.sh
+
+# Run the setup script
+./setup.sh
 ```
+
+Or, follow these manual steps:
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Edit content in the `src/components` directory
+- Update styles in `src/app/globals.css`
+- Add images to the `public/images` directory
+
+## Deployment
+
+This project is ready for deployment on platforms like Vercel, Netlify, or any other hosting service that supports Next.js.
+
+```bash
+# Build for production
+npm run build
+
+# Start production server
+npm start
+```
 
 ## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 

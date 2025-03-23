@@ -1,28 +1,67 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 
-const PromotionalBanner = () => {
+const SkillsEducationBanner = () => {
   return (
-    <div className="bg-blue-600 w-full py-8">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">All Apple Originals. Only on Apple TV+.</h2>
-        <p className="text-white/90 mb-4 text-lg">
-          Start watching with 7 days free. Or 3 months free when you buy an eligible Apple device.
-        </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button className="bg-white text-black hover:bg-white/90 min-w-[120px]">
-            Try It Free
-          </Button>
-          <Button variant="link" className="text-white hover:text-white/80">
-            See offer details
+    <div className="bg-gradient-to-r from-indigo-900 to-purple-900 w-full py-12">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Skills Section */}
+          <div className="bg-black/30 p-6 rounded-lg">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 border-b border-white/20 pb-2">Skills</h2>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <h3 className="text-xl text-white font-medium mb-3">Technical</h3>
+                <ul className="space-y-2 text-white/80">
+                  <li>Skill 1</li>
+                  <li>Skill 2</li>
+                  <li>Skill 3</li>
+                  <li>Skill 4</li>
+                  <li>Skill 5</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl text-white font-medium mb-3">Soft Skills</h3>
+                <ul className="space-y-2 text-white/80">
+                  <li>Skill 1</li>
+                  <li>Skill 2</li>
+                  <li>Skill 3</li>
+                  <li>Skill 4</li>
+                  <li>Skill 5</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          {/* Education Section */}
+          <div className="bg-black/30 p-6 rounded-lg">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 border-b border-white/20 pb-2">Education</h2>
+            <div className="space-y-4">
+              <div>
+                <h3 className="text-xl text-white font-medium">Degree Name</h3>
+                <p className="text-white/80">University Name</p>
+                <p className="text-white/60 text-sm">2015 - 2019</p>
+                <p className="text-white/80 mt-2">Brief description of your studies and achievements.</p>
+              </div>
+              
+              <div>
+                <h3 className="text-xl text-white font-medium">Another Degree/Certification</h3>
+                <p className="text-white/80">Institution Name</p>
+                <p className="text-white/60 text-sm">2013 - 2015</p>
+                <p className="text-white/80 mt-2">Brief description of your studies and achievements.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="flex justify-center mt-8">
+          <Button className="bg-white text-black hover:bg-white/90 min-w-[200px]">
+            Download Resume
           </Button>
         </div>
-        <p className="text-white/60 text-xs mt-4">
-          7 days free, then $9.99/month. Terms apply.
-        </p>
       </div>
     </div>
   );
 };
 
-export default PromotionalBanner;
+export default SkillsEducationBanner;

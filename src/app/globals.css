@@ -67,3 +67,44 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom styles for profile image */
+.profile-image-container {
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile-image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  z-index: 15;
+  pointer-events: none;
+  box-shadow: 
+    inset 0 0 15px 5px rgba(0, 0, 0, 0.3),
+    inset -50px 0 100px 0 rgba(0, 0, 0, 0.4);
+}
+
+.profile-image {
+  filter: contrast(1.05);
+  transition: all 0.5s ease;
+  animation: subtle-pulse 8s ease infinite;
+  transform-origin: center center;
+  object-position: center;
+}
+
+@keyframes subtle-pulse {
+  0%, 100% {
+    transform: scale(0.85);
+    filter: contrast(1.05) brightness(1);
+  }
+  50% {
+    transform: scale(0.9);
+    filter: contrast(1.1) brightness(1.05);
+  }
+}
