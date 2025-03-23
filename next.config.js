@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
+const repo = 'personalWebsite' // Replace with your repository name if different
+
 const nextConfig = {
   output: 'export',
+  basePath: process.env.NODE_ENV === 'production' ? `/${repo}` : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? `/${repo}/` : '',
   reactStrictMode: true,
   images: {
     domains: [
