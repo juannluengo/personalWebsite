@@ -1,16 +1,13 @@
-import Navbar from '@/components/layout/Navbar';
+import Layout from '@/components/layout/Layout';
 import Hero from '@/components/home/Hero';
 import ContentRow from '@/components/shared/ContentRow';
 import WorkExperienceSection from '@/components/home/WorkExperience';
 import SkillsEducation from '@/components/home/SkillsEducation';
-import ContactSection from '@/components/home/ContactSection';
-import Footer from '@/components/layout/Footer';
 import { personalProjects, sideProjects, achievements } from '@/data/projects';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black">
-      <Navbar />
+    <Layout>
       <Hero />
 
       <WorkExperienceSection />
@@ -33,10 +30,6 @@ export default function Home() {
         title="Achievements & Publications"
         contents={achievements}
       />
-
-      <ContactSection />
-
-      <Footer />
-    </main>
+    </Layout>
   );
 }

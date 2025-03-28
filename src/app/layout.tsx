@@ -5,10 +5,10 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Apple TV+ | Apple Originals, Exclusive Shows and Movies",
+  title: "Hi, Juan here",
   description: "Watch Apple TV+ in the Apple TV app to enjoy critically acclaimed Apple Original shows and movies.",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/images/NFTCalavera.png",
   },
 };
 
