@@ -1,5 +1,6 @@
 export const personalInfo = {
   name: "Juan Luengo",
+  email: "your.email@example.com",
   title: "People maximalist",
   description: "Some days building, some days thinking, some days improving. Always learning. Always living. ",
   contactDescription: "Always open to meet people and discuss new ideas. However, time is a matter of priorities, so don't take it personal if I don't reply immediately. I always do eventually. \n Stay positive and be direct! Lets build together!",
