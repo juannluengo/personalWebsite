@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: "Hi, Juan here",
   description: "Watch Apple TV+ in the Apple TV app to enjoy critically acclaimed Apple Original shows and movies.",
   icons: {
-    icon: "/images/NFTCalavera.png",
+    icon: process.env.NODE_ENV === 'production' 
+      ? "/personalWebsite/images/NFTCalavera.png"
+      : "/images/NFTCalavera.png",
   },
 };
 

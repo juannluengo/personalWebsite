@@ -11,13 +11,20 @@ export interface WorkExperience {
   technologies?: string[];
 }
 
+// Helper function to get the correct image path based on environment
+const getImagePath = (path: string): string => {
+  return process.env.NODE_ENV === 'production'
+    ? `/personalWebsite${path}`
+    : path;
+};
+
 export const workExperiences: WorkExperience[] = [
   {
     id: 'company-1',
     company: 'Amazon',
     role: 'Project Manager Intern',
     period: 'Feb 2025 - Present',
-    image: '/images/companies/amazonLogo.png',
+    image: getImagePath('/images/companies/amazonLogo.png'),
     imageSize: { width: 190, height: 30 },
     description: 'Brief description of your role and responsibilities at this company. Highlight key achievements and skills developed during this position.',
     responsibilities: [
@@ -36,7 +43,7 @@ export const workExperiences: WorkExperience[] = [
     company: 'Arup',
     role: 'Software Developer Intern',
     period: 'Jul 2023 - Sep 2023',
-    image: '/images/companies/arupLogo.png',
+    image: getImagePath('/images/companies/arupLogo.png'),
     imageSize: { width: 170, height: 30 },
     description: 'Brief description of your role and responsibilities at this company. Highlight key achievements and skills developed during this position.',
     responsibilities: [
@@ -55,7 +62,7 @@ export const workExperiences: WorkExperience[] = [
     company: 'FTX',
     role: 'Customer Support % Campus Ambassador',
     period: 'May 2021 - Nov 2022',
-    image: '/images/companies/ftxLogo.png',
+    image: getImagePath('/images/companies/ftxLogo.png'),
     imageSize: { width: 400, height: 30 },
     description: 'Brief description of your role and responsibilities at this company. Highlight key achievements and skills developed during this position.',
     responsibilities: [
@@ -74,7 +81,7 @@ export const workExperiences: WorkExperience[] = [
     company: 'IMA Groupe',
     role: 'Stagiaire Direction International',
     period: 'Jul 2022 - Sep 2022',
-    image: '/images/companies/imaLogo.png',
+    image: getImagePath('/images/companies/imaLogo.png'),
     imageSize: { width: 450, height: 30 },
     description: 'Brief description of your role and responsibilities at this company. Highlight key achievements and skills developed during this position.',
     responsibilities: [
