@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -10,7 +11,15 @@ const Navbar = () => {
         <div className="flex items-center space-x-6">
           <Link href="/" className="flex items-center">
             <div className="text-white flex items-center">
-              <img src="/images/NFTCalavera.png" alt="Logo" className="h-8 w-8" />
+              <Image 
+                src={process.env.NODE_ENV === 'production' 
+                  ? '/personalWebsite/images/NFTCalavera.png'
+                  : '/images/NFTCalavera.png'} 
+                alt="Logo" 
+                width={32} 
+                height={32} 
+                className="h-8 w-8"
+              />
             </div>
           </Link>
           <div className="hidden md:flex space-x-6">

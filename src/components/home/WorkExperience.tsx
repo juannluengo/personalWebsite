@@ -25,7 +25,7 @@ const WorkExperienceSection = () => {
     <div className="py-8">
       <div className="container mx-auto px-4">
         <div className="flex items-center mb-4">
-          <h2 className="text-2xl font-bold text-white">Work Experience</h2>
+          <h2 className="text-2xl font-bold text-white">Work</h2>
           <ChevronRight className="h-6 w-6 text-white/60 ml-2" />
         </div>
 

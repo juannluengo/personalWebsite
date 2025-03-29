@@ -3,7 +3,15 @@ import ContactForm from '@/components/home/contact/ContactForm';
 import ContactInfo from '@/components/home/contact/ContactInfo';
 import { personalInfo } from '@/data/personal';
 
+// Define explicit type for personalInfo with email property
+type PersonalInfoType = typeof personalInfo & {
+  email: string;
+};
+
 const ContactSection = () => {
+  // Cast personalInfo to include the email property
+  const typedPersonalInfo = personalInfo as PersonalInfoType;
+  
   return (
     <section className="py-16 bg-black">
       <div className="container mx-auto px-4">
@@ -15,8 +23,8 @@ const ContactSection = () => {
           
           {/* Contact Information */}
           <ContactInfo 
-            email={personalInfo.email}
-            description={personalInfo.contactDescription}
+            email={typedPersonalInfo.email}
+            description={typedPersonalInfo.contactDescription}
           />
         </div>
       </div>
