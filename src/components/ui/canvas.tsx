@@ -151,7 +151,8 @@ function render() {
     // @ts-ignore
     ctx.globalCompositeOperation = "lighter";
     // @ts-ignore
-    ctx.strokeStyle = "hsla(" + Math.round(f.update()) + ",100%,85%,0.1)";
+    // Use red tones for the particle animation (HSL with hue in red range)
+    ctx.strokeStyle = "hsla(" + (0 + Math.random() * 20) + ",100%,65%,0.1)"; // Red tones (0-20 on HSL scale)
     // @ts-ignore
     ctx.lineWidth = 5;
     

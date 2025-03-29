@@ -68,9 +68,11 @@ export function Spotlight({
       ref={containerRef}
       className={cn(
         'pointer-events-none absolute rounded-full bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops),transparent_80%)] blur-xl transition-opacity duration-200',
-        fill === 'white' 
-          ? 'from-zinc-50 via-zinc-100 to-zinc-200' 
-          : `from-${fill}-300 via-${fill}-200 to-${fill}-100`,
+        {
+          'from-zinc-50 via-zinc-100 to-zinc-200': fill === 'white',
+          'from-red-300 via-red-200 to-red-100': fill === 'red',
+          // Add more color variations as needed
+        },
         isHovered ? 'opacity-100' : 'opacity-0',
         className
       )}
