@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
-import ProfileImage from './ProfileImage';
+import RobotAnimation from './RobotAnimation';
 import HeroContent from './HeroContent';
 
 const Hero = () => {
@@ -12,8 +12,8 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black"></div>
         
         <div className="relative h-full flex flex-col md:flex-row items-center container mx-auto px-4 py-16">
-          {/* Profile Image Section */}
-          <ProfileImage />
+          {/* Robot Animation Section */}
+          <RobotAnimation />
           
           {/* Introduction Text */}
           <HeroContent />
