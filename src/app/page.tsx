@@ -14,11 +14,13 @@ export default function Home() {
       
       {/* Prime Video-style content sliders */}
       <div className="bg-black">
-        <ContentSlider 
-          title="Work Experience" 
-          viewAllLink="/experience"
-          items={experienceItems}
-        />
+        <div id="work-experience">
+          <ContentSlider 
+            title="Work Experience" 
+            viewAllLink="/experience"
+            items={experienceItems}
+          />
+        </div>
         
         <ContentSlider 
           title="My Skills" 

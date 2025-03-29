@@ -37,6 +37,9 @@ export default function ContentSlider({ title, viewAllLink, items }: ContentSlid
     }
   };
 
+  // Check if this is the Work Experience section to apply different styling
+  const isWorkExperience = title === "Work Experience";
+
   return (
     <div className="py-6 px-4">
       <div className="flex items-center justify-between mb-4">
@@ -69,18 +72,42 @@ export default function ContentSlider({ title, viewAllLink, items }: ContentSlid
           {items.map((item) => (
             <Link key={item.id} href={item.link}>
               <motion.div 
-                className="flex-shrink-0 relative w-48 h-64 rounded-md overflow-hidden bg-gray-800"
+                className={`flex-shrink-0 relative ${
+                  isWorkExperience 
+                    ? 'w-64 h-48 bg-gray-800/70 border border-gray-700' 
+                    : 'w-48 h-64 bg-gray-800'
+                } rounded-md overflow-hidden`}
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
-                <Image 
-                  src={item.image} 
-                  alt={item.title}
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-2 left-2 right-2">
+                <div className={`${
+                  isWorkExperience 
+                    ? 'flex items-center justify-center p-6' 
+                    : 'relative h-full w-full'
+                }`}>
+                  <Image 
+                    src={item.image} 
+                    alt={item.title}
+                    fill={!isWorkExperience}
+                    width={isWorkExperience ? 150 : undefined}
+                    height={isWorkExperience ? 80 : undefined}
+                    className={`${
+                      isWorkExperience 
+                        ? 'object-contain relative' 
+                        : 'object-cover absolute'
+                    }`}
+                  />
+                </div>
+                <div className={`absolute ${
+                  isWorkExperience 
+                    ? 'inset-x-0 bottom-0 bg-gray-900/90 py-2 px-3' 
+                    : 'inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300'
+                }`}>
+                  <div className={`${
+                    isWorkExperience 
+                      ? '' 
+                      : 'absolute bottom-2 left-2 right-2'
+                  }`}>
                     <h3 className="text-white text-sm font-medium">{item.title}</h3>
                     {item.subtitle && (
                       <p className="text-gray-300 text-xs mt-1">{item.subtitle}</p>
