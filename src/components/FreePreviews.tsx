@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Card, CardContent } from '@/components/ui/card';
 import { ChevronRight } from 'lucide-react';
@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { type WorkExperience, workExperiences } from '@/data/work-experience';
+import { getImagePath } from '@/lib/utils';
 
 const WorkExperienceSection = () => {
   return (
@@ -33,7 +34,7 @@ const WorkExperienceSection = () => {
                         <CardContent className="p-0">
                           <div className="relative aspect-video overflow-hidden rounded-lg card-image">
                             <Image
-                              src={experience.image}
+                              src={getImagePath(experience.image)}
                               alt={experience.company}
                               fill
                               className="object-cover"
@@ -58,7 +59,7 @@ const WorkExperienceSection = () => {
                       <div className="mt-4">
                         <div className="relative aspect-video w-full overflow-hidden rounded-lg mb-4">
                           <Image
-                            src={experience.image}
+                            src={getImagePath(experience.image)}
                             alt={experience.company}
                             fill
                             className="object-cover"

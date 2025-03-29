@@ -2,6 +2,8 @@ import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import Image from 'next/image';
 import { ContentItem } from './ContentRow';
+import { motion } from 'framer-motion';
+import { getImagePath } from '@/lib/utils';
 
 interface ProjectCardProps {
   content: ContentItem;
@@ -13,7 +15,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ content }) => {
       <CardContent className="p-0">
         <div className="relative aspect-video overflow-hidden rounded-lg card-image">
           <Image
-            src={content.image}
+            src={getImagePath(content.image)}
             alt={content.title}
             fill
             className="object-cover"

@@ -68,30 +68,30 @@ export const experienceItems: ContentItem[] = [
   {
     id: 'exp-1',
     title: 'Amazon',
-    subtitle: 'Senior Software Engineer • Jan 2021 - Present',
+    subtitle: 'Project Management Intern • Feb 2025 - Present',
     image: '/images/companies/amazonLogo.png',
     link: '/experience/amazon'
   },
   {
     id: 'exp-2',
+    title: 'Arup',
+    subtitle: 'Software Developer Intern • Jul 2023 - Sep 2023',
+    image: '/images/companies/arupLogo.png',
+    link: '/experience/arup'
+  },
+  {
+    id: 'exp-3',
     title: 'FTX',
-    subtitle: 'Tech Lead • Mar 2019 - Dec 2020',
+    subtitle: 'Customer Support & Campus Ambassador • May 2021 - Nov 2022',
     image: '/images/companies/ftxLogo.png',
     link: '/experience/ftx'
   },
   {
-    id: 'exp-3',
+    id: 'exp-4',
     title: 'IMA',
-    subtitle: 'Full Stack Developer • Jun 2017 - Feb 2019',
+    subtitle: 'Stagiaire Direction International • Jul 2022 - Sep 2022',
     image: '/images/companies/imaLogo.png',
     link: '/experience/ima'
-  },
-  {
-    id: 'exp-4',
-    title: 'Arup',
-    subtitle: 'Software Engineer • Aug 2015 - May 2017',
-    image: '/images/companies/arupLogo.png',
-    link: '/experience/arup'
   }
 ];
 

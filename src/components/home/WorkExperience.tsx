@@ -7,6 +7,7 @@ import Image from 'next/image';
 import { workExperiences, WorkExperience } from '@/data/work-experience';
 import DetailModal from '@/components/shared/DetailModal';
 import ContentBlock from '@/components/shared/ContentBlock';
+import { getImagePath } from '@/lib/utils';
 
 const WorkExperienceSection = () => {
   const [selectedExperience, setSelectedExperience] = useState<WorkExperience | null>(null);
@@ -46,7 +47,7 @@ const WorkExperienceSection = () => {
                   >
                     <div className="relative aspect-video overflow-hidden rounded-lg mb-3 flex items-center justify-center">
                       <Image
-                        src={experience.image}
+                        src={getImagePath(experience.image)}
                         alt={experience.company}
                         width={experience.imageSize?.width || 100}
                         height={experience.imageSize?.height || 50}
@@ -75,7 +76,7 @@ const WorkExperienceSection = () => {
             <div className="flex items-center mb-4">
               <div className="relative h-14 w-14 overflow-hidden rounded-lg flex items-center justify-center bg-zinc-800 p-2 mr-4">
                 <Image
-                  src={selectedExperience.image}
+                  src={getImagePath(selectedExperience.image)}
                   alt={selectedExperience.company}
                   width={100}
                   height={50}

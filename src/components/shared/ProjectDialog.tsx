@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import Image from 'next/image';
 import { ContentItem } from './ContentRow';
+import { getImagePath } from '@/lib/utils';
 
 interface ProjectDialogProps {
   content: ContentItem;
@@ -26,7 +27,7 @@ const ProjectDialog: React.FC<ProjectDialogProps> = ({ content, children }) => {
         <div className="mt-4">
           <div className="relative aspect-video w-full overflow-hidden rounded-lg mb-4">
             <Image
-              src={content.image}
+              src={getImagePath(content.image)}
               alt={content.title}
               fill
               className="object-cover"

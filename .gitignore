@@ -1,7 +1,3 @@
-# Image files
-# *.jpg
-# *.png
-
 # Build and cache directories
 cache
 .next

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { getImagePath } from '@/lib/utils';
 
 type ContentItem = {
   id: string;
@@ -86,7 +87,7 @@ export default function ContentSlider({ title, viewAllLink, items }: ContentSlid
                     : 'relative h-full w-full'
                 }`}>
                   <Image 
-                    src={item.image} 
+                    src={getImagePath(item.image)} 
                     alt={item.title}
                     fill={!isWorkExperience}
                     width={isWorkExperience ? 150 : undefined}
