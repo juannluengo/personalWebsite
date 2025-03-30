@@ -4,6 +4,7 @@ import { SplineScene } from "@/components/ui/splite";
 import { Card } from "@/components/ui/card";
 import { PlayCircle } from "lucide-react";
 import Link from "next/link";
+import { RainbowButton } from "@/components/ui/rainbow-button";
 
 export default function RobotAnimation() {
   // Function to scroll to the Work Experience section
@@ -26,7 +27,7 @@ export default function RobotAnimation() {
         
         {/* Title with large format like in Prime Video - wide enough to extend behind robot */}
         <h1 className="text-6xl md:text-8xl font-bold text-white mb-4 tracking-tighter w-[170%] relative z-5">
-          JUAN LUENGO GALLEGO
+          JUAN LUENGO
         </h1>
         
         {/* Subtitle/tagline */}
@@ -44,10 +45,10 @@ export default function RobotAnimation() {
             <PlayCircle size={20} />
             <span className="font-medium">View Profile</span>
           </button>
-          <Link href="/projects">
-            <button className="bg-gray-800/80 text-white px-6 py-2 rounded-md hover:bg-gray-700/80 transition-colors">
-              <span className="font-medium">More Info</span>
-            </button>
+          <Link href="/socials">
+            <RainbowButton>
+              <span className="font-medium text-white">More Info</span>
+            </RainbowButton>
           </Link>
         </div>
       </div>

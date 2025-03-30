@@ -32,6 +32,9 @@ const Navbar = () => {
             <Button variant="link" className="text-white hover:text-white/80">
               <Link href="/collections">Collections</Link>
             </Button>
+            <Button variant="link" className="text-white hover:text-white/80">
+              <Link href="/socials">Contact</Link>
+            </Button>
           </div>
         </div>
         <div className="flex items-center space-x-4">
