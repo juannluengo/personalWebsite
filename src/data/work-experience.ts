@@ -25,7 +25,7 @@ export const workExperiences: WorkExperience[] = [
     role: 'Project Manager Intern',
     period: 'Feb 2025 - Present',
     image: getImagePath('/images/companies/amazonLogo.png'),
-    imageSize: { width: 190, height: 30 },
+    imageSize: { width: 100, height: 16 },
     description: 'Brief description of your role and responsibilities at this company. Highlight key achievements and skills developed during this position.',
     responsibilities: [
       'Led cross-functional teams to deliver project milestones',
@@ -44,7 +44,7 @@ export const workExperiences: WorkExperience[] = [
     role: 'Software Developer Intern',
     period: 'Jul 2023 - Sep 2023',
     image: getImagePath('/images/companies/arupLogo.png'),
-    imageSize: { width: 170, height: 30 },
+    imageSize: { width: 80, height: 16 },
     description: 'Brief description of your role and responsibilities at this company. Highlight key achievements and skills developed during this position.',
     responsibilities: [
       'Developed and maintained web applications',

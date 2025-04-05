@@ -45,15 +45,17 @@ const WorkExperienceSection = () => {
                     className="bg-zinc-800 rounded-lg p-4 cursor-pointer transition-transform hover:scale-105 h-full"
                     onClick={() => openModal(experience)}
                   >
-                    <div className="relative aspect-video overflow-hidden rounded-lg mb-3 flex items-center justify-center">
-                      <Image
-                        src={getImagePath(experience.image)}
-                        alt={experience.company}
-                        width={experience.imageSize?.width || 100}
-                        height={experience.imageSize?.height || 50}
-                        className="object-contain"
-                        unoptimized
-                      />
+                    <div className="relative aspect-video overflow-hidden rounded-lg mb-3 flex items-center justify-center" style={{paddingTop: '45px'}}>
+                      <div>
+                        <Image
+                          src={getImagePath(experience.image)}
+                          alt={experience.company}
+                          width={experience.imageSize?.width || 100}
+                          height={experience.imageSize?.height || 50}
+                          className="work-experience-logo object-contain"
+                          unoptimized
+                        />
+                      </div>
                     </div>
                     <div>
                       <h3 className="text-white font-medium text-sm">{experience.company}</h3>

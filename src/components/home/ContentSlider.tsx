@@ -13,6 +13,10 @@ type ContentItem = {
   image: string;
   link: string;
   subtitle?: string;
+  imageSize?: {
+    width: number;
+    height: number;
+  };
 };
 
 interface ContentSliderProps {
@@ -83,36 +87,46 @@ export default function ContentSlider({ title, viewAllLink, items }: ContentSlid
               >
                 <div className={`${
                   isWorkExperience 
-                    ? 'flex items-center justify-center p-6' 
+                    ? 'h-full flex flex-col' 
                     : 'relative h-full w-full'
-                }`}>
-                  <Image 
-                    src={getImagePath(item.image)} 
-                    alt={item.title}
-                    fill={!isWorkExperience}
-                    width={isWorkExperience ? 150 : undefined}
-                    height={isWorkExperience ? 80 : undefined}
-                    className={`${
-                      isWorkExperience 
-                        ? 'object-contain relative' 
-                        : 'object-cover absolute'
-                    }`}
-                  />
-                </div>
-                <div className={`absolute ${
-                  isWorkExperience 
-                    ? 'inset-x-0 bottom-0 bg-gray-900/90 py-2 px-3' 
-                    : 'inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300'
                 }`}>
                   <div className={`${
                     isWorkExperience 
-                      ? '' 
-                      : 'absolute bottom-2 left-2 right-2'
+                      ? 'flex-1 flex items-center justify-center p-4' 
+                      : 'relative h-full w-full'
                   }`}>
-                    <h3 className="text-white text-sm font-medium">{item.title}</h3>
-                    {item.subtitle && (
-                      <p className="text-gray-300 text-xs mt-1">{item.subtitle}</p>
+                    {isWorkExperience ? (
+                      <Image 
+                        src={getImagePath(item.image)} 
+                        alt={item.title}
+                        width={item.imageSize?.width}
+                        height={item.imageSize?.height}
+                        className="object-contain"
+                      />
+                    ) : (
+                      <Image 
+                        src={getImagePath(item.image)} 
+                        alt={item.title}
+                        fill
+                        className="object-cover"
+                      />
                     )}
+                  </div>
+                  <div className={`${
+                    isWorkExperience 
+                      ? 'bg-gray-900/90 py-2 px-3' 
+                      : 'absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300'
+                  }`}>
+                    <div className={`${
+                      isWorkExperience 
+                        ? '' 
+                        : 'absolute bottom-2 left-2 right-2'
+                    }`}>
+                      <h3 className="text-white text-sm font-medium">{item.title}</h3>
+                      {item.subtitle && (
+                        <p className="text-gray-300 text-xs mt-1">{item.subtitle}</p>
+                      )}
+                    </div>
                   </div>
                 </div>
               </motion.div>

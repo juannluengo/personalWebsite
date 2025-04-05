@@ -144,3 +144,9 @@
     background-position: 200%; 
   }
 }
+
+/* Custom styles for work experience logos */
+.work-experience-logo {
+  transform: scale(0.5);
+  margin-top: 40px;
+}

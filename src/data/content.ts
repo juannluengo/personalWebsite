@@ -4,6 +4,7 @@ export interface ContentItem {
   image: string;
   link: string;
   subtitle?: string;
+  imageSize?: { width: number; height: number };
 }
 
 export interface FeaturedTab {
@@ -70,28 +71,32 @@ export const experienceItems: ContentItem[] = [
     title: 'Amazon',
     subtitle: 'Project Management Intern • Feb 2025 - Present',
     image: '/images/companies/amazonLogo.png',
-    link: '/experience/amazon'
+    link: '/experience/amazon',
+    imageSize: { width: 90, height: 30 }
   },
   {
     id: 'exp-2',
     title: 'Arup',
     subtitle: 'Software Developer Intern • Jul 2023 - Sep 2023',
     image: '/images/companies/arupLogo.png',
-    link: '/experience/arup'
+    link: '/experience/arup',
+    imageSize: { width: 90, height: 30 }
   },
   {
     id: 'exp-3',
     title: 'FTX',
     subtitle: 'Customer Support & Campus Ambassador • May 2021 - Nov 2022',
     image: '/images/companies/ftxLogo.png',
-    link: '/experience/ftx'
+    link: '/experience/ftx',
+    imageSize: { width: 150, height: 50 }
   },
   {
     id: 'exp-4',
     title: 'IMA',
     subtitle: 'Stagiaire Direction International • Jul 2022 - Sep 2022',
     image: '/images/companies/imaLogo.png',
-    link: '/experience/ima'
+    link: '/experience/ima',
+    imageSize: { width: 150, height: 50 }
   }
 ];
 
