@@ -14,7 +14,7 @@ const tabs: NavTab[] = [
   { title: 'Projects', href: '/projects' },
   { title: 'Experience', href: '/experience' },
   { title: 'Skills', href: '/skills' },
-  { title: 'Contact', href: '/contact' }
+  { title: 'Contact', href: '/socials' }
 ];
 
 export default function NavigationTabs() {

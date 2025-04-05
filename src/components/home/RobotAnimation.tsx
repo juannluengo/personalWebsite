@@ -4,7 +4,7 @@ import { SplineScene } from "@/components/ui/splite";
 import { Card } from "@/components/ui/card";
 import { PlayCircle } from "lucide-react";
 import Link from "next/link";
-import { RainbowButton } from "@/components/ui/rainbow-button";
+import { WhiteButton } from "@/components/ui/white-button";
 
 export default function RobotAnimation() {
   // Function to scroll to the Work Experience section
@@ -46,9 +46,9 @@ export default function RobotAnimation() {
             <span className="font-medium">View Profile</span>
           </button>
           <Link href="/socials">
-            <RainbowButton>
-              <span className="font-medium text-white">More Info</span>
-            </RainbowButton>
+            <WhiteButton className="flex items-center">
+              <span className="font-medium">More Info</span>
+            </WhiteButton>
           </Link>
         </div>
       </div>

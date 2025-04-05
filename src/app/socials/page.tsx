@@ -6,14 +6,14 @@ import { personalInfo } from '@/data/personal';
 import Layout from '@/components/layout/Layout';
 import { Github, Linkedin, Twitter } from 'lucide-react';
 import Link from 'next/link';
-import { RainbowButton } from "@/components/ui/rainbow-button";
+import { LargeWhiteButton } from "@/components/ui/large-white-button";
 
 export default function SocialsPage() {
   // Social icon mapping with proper typing
   const socialIcons: Record<string, React.ReactNode> = {
-    github: <Github size={32} className="text-white" />,
-    linkedin: <Linkedin size={32} className="text-white" />,
-    twitter: <Twitter size={32} className="text-white" />
+    github: <Github size={32} className="text-black" />,
+    linkedin: <Linkedin size={32} className="text-black" />,
+    twitter: <Twitter size={32} className="text-black" />
   };
 
   return (
@@ -42,14 +42,14 @@ export default function SocialsPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <RainbowButton className="w-full h-32">
+                  <LargeWhiteButton>
                     <div className="flex flex-col items-center justify-center">
                       <div className="text-4xl mb-4">
                         {platform in socialIcons ? socialIcons[platform] : null}
                       </div>
-                      <span className="text-xl capitalize text-white">{platform}</span>
+                      <span className="text-xl capitalize text-black">{platform}</span>
                     </div>
-                  </RainbowButton>
+                  </LargeWhiteButton>
                 </a>
               ))}
             </div>

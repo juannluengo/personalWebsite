@@ -14,7 +14,7 @@ export function Spotlight({
   className,
   size = 200,
   fill = 'white',
-  springOptions = { bounce: 0 },
+  springOptions = { bounce: 0, damping: 10, stiffness: 400 },
 }: SpotlightProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
@@ -23,8 +23,9 @@ export function Spotlight({
   const mouseX = useSpring(0, springOptions);
   const mouseY = useSpring(0, springOptions);
 
-  const spotlightLeft = useTransform(mouseX, (x) => `${x - size / 2}px`);
-  const spotlightTop = useTransform(mouseY, (y) => `${y - size / 2}px`);
+  const halfSize = size / 2;
+  const spotlightLeft = useTransform(mouseX, (x) => `${x - halfSize}px`);
+  const spotlightTop = useTransform(mouseY, (y) => `${y - halfSize}px`);
 
   useEffect(() => {
     if (containerRef.current) {
@@ -40,9 +41,15 @@ export function Spotlight({
   const handleMouseMove = useCallback(
     (event: MouseEvent) => {
       if (!parentElement) return;
-      const { left, top } = parentElement.getBoundingClientRect();
-      mouseX.set(event.clientX - left);
-      mouseY.set(event.clientY - top);
+      
+      // Get precise mouse coordinates relative to the parent
+      const rect = parentElement.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+      
+      // Set values immediately for more responsive effect
+      mouseX.set(x);
+      mouseY.set(y);
     },
     [mouseX, mouseY, parentElement]
   );
@@ -81,6 +88,7 @@ export function Spotlight({
         height: size,
         left: spotlightLeft,
         top: spotlightTop,
+        transform: 'translate3d(0, 0, 0)', // Force hardware acceleration
       }}
     />
   );
