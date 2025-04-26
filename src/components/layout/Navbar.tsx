@@ -27,6 +27,9 @@ const Navbar = () => {
               <Link href="/">Originals</Link>
             </Button>
             <Button variant="link" className="text-white hover:text-white/80">
+              <Link href="/education">Education</Link>
+            </Button>
+            <Button variant="link" className="text-white hover:text-white/80">
               <Link href="/sports">Sports</Link>
             </Button>
             <Button variant="link" className="text-white hover:text-white/80">
