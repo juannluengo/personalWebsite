@@ -13,8 +13,8 @@ export const educationHistory: EducationItem[] = [
     id: 'tue',
     institution: 'Eindhoven University of Technology (TU/e)',
     degree: "Master's degree, Ingeniería informática",
-    dates: 'Sep 2023 - Jul 2024',
-    description: 'Erasmus Program with courses from the Master in Computer Science and Master of Industrial Engineering.',
+    dates: '2023 - 2024',
+    description: 'Erasmus Program with courses from the Master in Engineering Computer Science.',
     skills: ['Distributed Systems', 'LaTeX', 'Price Optimization', 'Big Data', 'Logistics Management', 'Cyber-Physical Systems', 'Nginx'],
     // logo: '/images/logos/tue.png' // Add logo path if available
   },
@@ -40,7 +40,7 @@ export const educationHistory: EducationItem[] = [
     institution: 'SEK International Schools',
     degree: 'Bachillerato de Ciencias y Tecnología',
     dates: '2018 - 2020',
-    description: 'Successfully completed the national and international system (PAI) simultaneously. Focused on the branch of technological science during the last two high school courses.',
+    description: 'Technological sciences',
     // logo: '/images/logos/sek.png' // Add logo path if available
   },
 ];

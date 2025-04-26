@@ -13,7 +13,7 @@ const tabs: NavTab[] = [
   { title: 'Home', href: '/' },
   { title: 'Projects', href: '/projects' },
   { title: 'Experience', href: '/experience' },
-  { title: 'Skills', href: '/skills' },
+  { title: 'Education', href: '/education' },
   { title: 'Contact', href: '/socials' }
 ];
 

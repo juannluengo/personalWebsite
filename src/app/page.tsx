@@ -1,12 +1,14 @@
 'use client'
 
+'use client';
+
 import Layout from '@/components/layout/Layout';
 import Hero from '@/components/home/Hero';
 import ContentSlider from '@/components/home/ContentSlider';
 import { personalProjects, sideProjects, achievements } from '@/data/projects';
 import { experienceItems } from '@/data/content'; 
 import { educationHistory } from '@/data/education';
-import EducationTimeline from '@/components/home/EducationTimeline'; 
+import EducationSection from '@/components/home/EducationSection';
 
 export default function Home() {
   return (
@@ -38,7 +40,7 @@ export default function Home() {
         </div>
 
         <div id="education-timeline" className="mb-12">
-           <EducationTimeline items={educationHistory} />
+           <EducationSection items={educationHistory} />
         </div>
         
         <div id="side-projects" className="mb-12">

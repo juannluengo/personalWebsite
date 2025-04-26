@@ -70,7 +70,7 @@ export default function EducationPage() {
           {/* Larger heading */}
           <h1 className="text-5xl md:text-6xl font-bold text-center mb-6">My Education Journey</h1>
           <p className="text-lg text-gray-400 text-center mb-20 max-w-3xl mx-auto">
-            Here's a detailed look at my academic background, highlighting the key institutions, programs, and skills I've acquired along the way.
+            Though I'm a huge believer in self-learning, that doesn't exempt me from formal education. More than knowledge, they taught me values and gave me the opportunity to meet amazing people.
           </p>
 
           {/* Education Degrees Section */}

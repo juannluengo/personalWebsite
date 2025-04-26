@@ -150,3 +150,9 @@
   transform: scale(0.5);
   margin-top: 40px;
 }
+
+/* Custom Utilities */
+.clip-path-arrow {
+  -webkit-clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+}
