@@ -30,7 +30,7 @@ const EducationCard: React.FC<{ item: EducationItem }> = ({ item }) => (
       )}
       
       {/* Special button for UPM Computer Science */}
-      {item.id === 'upm-cs' && (
+      {item.id === 'upm-bba' && (
         <div className="mb-4">
           <a 
             href="https://oa.upm.es/87893/1/TFG_JUAN_LUENGO_GALLEGO.pdf" 

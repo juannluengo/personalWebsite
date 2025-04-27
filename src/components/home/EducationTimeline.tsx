@@ -34,19 +34,23 @@ const EducationTimeline: React.FC<EducationTimelineProps> = ({ items }) => {
       </div>
 
       {/* Horizontal Timeline with Gradients */}
-      <div className="relative flex items-center justify-between py-16 px-4">
-        {/* Horizontal connecting line - gradient background */}
-        <div className="absolute left-0 top-1/2 h-1 w-full bg-gradient-to-r from-blue-900/40 via-purple-900/40 to-blue-900/40 transform -translate-y-1/2 rounded"></div>
+      <div className="relative w-full h-32">
+        {/* Connecting line */}
+        <div className="absolute inset-0 flex items-center">
+          <div className="w-full h-1 bg-gradient-to-r from-blue-900/40 via-purple-900/40 to-blue-900/40 rounded"></div>
+        </div>
 
         {/* Timeline nodes */}
-        {reversedItems.map((item, index) => (
-          <Link href="/education" key={item.id} className="relative z-10 group">
-            <div className="flex flex-col items-center cursor-pointer">
-              {/* Gradient node with glow effect */}
-              <div className={`h-6 w-6 rounded-full bg-gradient-to-br ${nodeColors[index % nodeColors.length]} shadow-lg transition-all duration-300 group-hover:scale-125 group-hover:shadow-[0_0_10px_rgba(59,130,246,0.6)]`}></div>
-              
-              {/* Year indicator */}
-              <div className="mt-2 text-xs text-gray-400">
+        <div className="relative z-10 flex justify-between items-center h-full px-4">
+          {reversedItems.map((item, index) => (
+            <Link href="/education" key={item.id} className="relative h-full flex flex-col items-center group">
+              {/* Dot aligned on line: bottom of dot on center */}
+              <div className="absolute left-1/2 top-[calc(50%-0.75rem)] -translate-x-1/2">
+                <div className={`h-6 w-6 rounded-full bg-gradient-to-br ${nodeColors[index % nodeColors.length]} shadow-lg transition-all duration-300 group-hover:scale-125 group-hover:shadow-[0_0_10px_rgba(59,130,246,0.6)]`}></div>
+              </div>
+
+              {/* Year indicator below dot */}
+              <div className="mt-8 text-xs text-gray-400">
                 {item.dates.split(' - ')[0]}
               </div>
 
@@ -59,9 +63,9 @@ const EducationTimeline: React.FC<EducationTimelineProps> = ({ items }) => {
                 {/* Triangle pointer */}
                 <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-t-gray-900 mx-auto"></div>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div>
       </div>
 
       {/* Call to action button */}

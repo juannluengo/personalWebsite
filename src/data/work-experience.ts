@@ -95,4 +95,77 @@ export const workExperiences: WorkExperience[] = [
     ],
     technologies: ['Market Research', 'Business Development', 'International Relations']
   }
+];
+
+export const nonTechExperiences: WorkExperience[] = [
+  {
+    id: 'non-tech-1',
+    company: 'La Bodeguilla Del Gato',
+    role: 'Waiter',
+    period: 'Jun 2021 - Aug 2021',
+    image: getImagePath('/images/companies/default-logo.png'),
+    description: 'Worked as a waiter during summer to gain customer service experience and earn extra income.',
+    responsibilities: [
+      'Provided excellent customer service to restaurant patrons',
+      'Managed orders and coordinated with kitchen staff',
+      'Handled cash transactions and maintained cleanliness standards'
+    ]
+  },
+  {
+    id: 'non-tech-2',
+    company: 'NH Hotels',
+    role: 'Hotel Cleaner',
+    period: 'Jul 2020 - Sep 2020',
+    image: getImagePath('/images/companies/default-logo.png'),
+    description: 'Summer job focusing on maintaining high cleanliness standards in a hotel environment.',
+    responsibilities: [
+      'Ensured rooms and common areas were properly cleaned and sanitized',
+      'Managed cleaning supplies inventory',
+      'Responded promptly to guest requests and concerns'
+    ]
+  },
+  {
+    id: 'non-tech-3',
+    company: 'Academia Cervantes',
+    role: 'Computer Science Teacher',
+    period: 'Sep 2019 - Jun 2020',
+    image: getImagePath('/images/companies/default-logo.png'),
+    description: 'Taught basic computer science concepts to elementary and middle school students.',
+    responsibilities: [
+      'Developed curriculum and lesson plans for introductory programming',
+      'Guided students through hands-on projects using Scratch and basic HTML',
+      'Provided individual assistance to students requiring extra help'
+    ],
+    technologies: ['Scratch', 'HTML/CSS', 'Basic JavaScript']
+  },
+  {
+    id: 'non-tech-4',
+    company: 'DHL',
+    role: 'Warehouse Associate',
+    period: 'Dec 2018 - Feb 2019',
+    image: getImagePath('/images/companies/default-logo.png'),
+    description: 'Seasonal position handling warehouse operations during holiday rush period.',
+    responsibilities: [
+      'Processed incoming and outgoing packages',
+      'Organized inventory and maintained warehouse organization',
+      'Assisted with loading and unloading delivery vehicles'
+    ]
+  },
+  {
+    id: 'non-tech-5',
+    company: 'Madrid Community',
+    role: 'COVID Masks Provider',
+    period: 'Apr 2020 - Jun 2020',
+    image: getImagePath('/images/companies/default-logo.png'),
+    description: 'Volunteer position during the COVID-19 pandemic for Madrid\'s Community election.',
+    responsibilities: [
+      'Distributed masks and other PPE to polling stations and voters',
+      'Ensured compliance with COVID-19 safety protocols',
+      'Assisted in organizing sanitization schedules and procedures'
+    ],
+    achievements: [
+      'Helped ensure safe voting conditions during a critical election period',
+      'Coordinated with multiple polling stations to optimize PPE distribution'
+    ]
+  }
 ]; 

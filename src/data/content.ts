@@ -71,7 +71,7 @@ export const experienceItems: ContentItem[] = [
     title: 'Amazon',
     subtitle: 'Project Management Intern • Feb 2025 - Present',
     image: '/images/companies/amazonLogo.png',
-    link: '/experience/amazon',
+    link: '/experience#company-1',
     imageSize: { width: 90, height: 30 }
   },
   {
@@ -79,7 +79,7 @@ export const experienceItems: ContentItem[] = [
     title: 'Arup',
     subtitle: 'Software Developer Intern • Jul 2023 - Sep 2023',
     image: '/images/companies/arupLogo.png',
-    link: '/experience/arup',
+    link: '/experience#company-2',
     imageSize: { width: 90, height: 30 }
   },
   {
@@ -87,7 +87,7 @@ export const experienceItems: ContentItem[] = [
     title: 'FTX',
     subtitle: 'Customer Support & Campus Ambassador • May 2021 - Nov 2022',
     image: '/images/companies/ftxLogo.png',
-    link: '/experience/ftx',
+    link: '/experience#company-3',
     imageSize: { width: 150, height: 50 }
   },
   {
@@ -95,7 +95,7 @@ export const experienceItems: ContentItem[] = [
     title: 'IMA',
     subtitle: 'Stagiaire Direction International • Jul 2022 - Sep 2022',
     image: '/images/companies/imaLogo.png',
-    link: '/experience/ima',
+    link: '/experience#company-4',
     imageSize: { width: 150, height: 50 }
   }
 ];

@@ -1,14 +1,12 @@
 'use client'
 
-'use client';
-
 import Layout from '@/components/layout/Layout';
 import Hero from '@/components/home/Hero';
 import ContentSlider from '@/components/home/ContentSlider';
 import { personalProjects, sideProjects, achievements } from '@/data/projects';
-import { experienceItems } from '@/data/content'; 
 import { educationHistory } from '@/data/education';
 import EducationSection from '@/components/home/EducationSection';
+import WorkExperienceSection from '@/components/home/WorkExperienceSection';
 
 export default function Home() {
   return (
@@ -19,11 +17,7 @@ export default function Home() {
       {/* Prime Video-style content sliders */}
       <div className="bg-black text-white py-12">
         <div id="work-experience" className="mb-12">
-          <ContentSlider 
-            title="Work Experience" 
-            viewAllLink="/experience"
-            items={experienceItems}
-          />
+          <WorkExperienceSection />
         </div>
         
         <div id="personal-projects" className="mb-12">

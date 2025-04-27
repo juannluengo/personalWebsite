@@ -41,6 +41,7 @@ export const educationHistory: EducationItem[] = [
     degree: 'Bachillerato de Ciencias y Tecnología',
     dates: '2018 - 2020',
     description: 'Technological sciences',
+    skills: ['Oratory', 'Entrepreneurship', 'Technology', 'Languages'],
     // logo: '/images/logos/sek.png' // Add logo path if available
   },
 ];
