@@ -170,3 +170,9 @@
   transform: scale(1);
   margin-top: 0;
 }
+
+/* Custom styles for strikethrough text */
+s {
+  text-decoration-color: rgb(156 163 175);
+  opacity: 0.8;
+}

@@ -9,6 +9,7 @@ export interface WorkExperience {
   responsibilities?: string[];
   achievements?: string[];
   technologies?: string[];
+  link?: string;
 }
 
 // Helper function to get the correct image path based on environment
@@ -93,8 +94,8 @@ export const workExperiences: WorkExperience[] = [
       'Great introductor. Added a few potential clients.'
     ],
     achievements: [
-      '',
-      ''
+      'Who wouldn\'t like a free NFT after winning a hackaton? I made it happen!',
+      'You can savely go to latin america now. I made sure all our emergency contacts where still operating.'
     ],
     technologies: ['Market Research', 'Agile', 'CRM', 'French']
   }
@@ -103,72 +104,75 @@ export const workExperiences: WorkExperience[] = [
 export const nonTechExperiences: WorkExperience[] = [
   {
     id: 'non-tech-1',
-    company: 'La Bodeguilla Del Gato',
+    company: 'Tres Tapasbar Eindhoven',
     role: 'Waiter',
-    period: 'Jun 2021 - Aug 2021',
-    image: getImagePath('/images/companies/default-logo.png'),
-    description: 'Worked as a waiter during summer to gain customer service experience and earn extra income.',
+    period: 'Sep 2023 - Jun 2024',
+    image: '',
+    description: 'Worked as a waiter during my Erasmus to gain <s>MONEY</s> customer service experience.',
+    link: 'https://www.trestapasbar.nl/',
     responsibilities: [
-      'Provided excellent customer service to restaurant patrons',
-      'Managed orders and coordinated with kitchen staff',
-      'Handled cash transactions and maintained cleanliness standards'
-    ]
+      'Bring food (and somemtimes even drinks!) to customers',
+      'Pronounce spanish tapas names with a heavy english accent',
+      'Smile a lot and nod intensely when people speak to me in Dutch'
+    ],
+    technologies: ['Memorization', 'Customer Obsession', 'Dutch accent'],
   },
   {
     id: 'non-tech-2',
-    company: 'NH Hotels',
+    company: 'Hotel Mariënhage',
     role: 'Hotel Cleaner',
-    period: 'Jul 2020 - Sep 2020',
-    image: getImagePath('/images/companies/default-logo.png'),
-    description: 'Summer job focusing on maintaining high cleanliness standards in a hotel environment.',
+    period: 'Feb 2024 - Mar 2024',
+    image: '',
+    description: 'Worked as a hotel cleaner during my Erasmus to gain <s>MONEY</s> insight on hotel logistics. Left it cause my back hurt too much.',
+    link: 'https://www.marienhage.com/',
     responsibilities: [
-      'Ensured rooms and common areas were properly cleaned and sanitized',
-      'Managed cleaning supplies inventory',
+      'Ensured rooms were properly cleaned and sanitized',
+      'They called me the King of the Vacuum Cleaner. I think that\s all you need to know',
       'Responded promptly to guest requests and concerns'
-    ]
+    ],
+    technologies: ['Bleach', 'Sheet folding', 'Good jokes', 'Odor resistance'],
   },
   {
     id: 'non-tech-3',
-    company: 'Academia Cervantes',
+    company: 'Personal Tutor',
     role: 'Computer Science Teacher',
-    period: 'Sep 2019 - Jun 2020',
-    image: getImagePath('/images/companies/default-logo.png'),
-    description: 'Taught basic computer science concepts to elementary and middle school students.',
+    period: 'Sep 2021 - Mar 2022',
+    image: '',
+    description: 'Taught Python and Visual Basic (yes, I know. I\'m not proud either) concepts to <s>gain MONEY</s> help students achieve their maximum potential.',
     responsibilities: [
-      'Developed curriculum and lesson plans for introductory programming',
-      'Guided students through hands-on projects using Scratch and basic HTML',
-      'Provided individual assistance to students requiring extra help'
+      'Introduced VB concepts and ideas while subtly asking them to switch to Python',
+      'Taught Python superpowers to CS first year students',
+      'Provided individual assistance to students requiring extra help (yes, the extra help was for free. Not everything is about money...)'
     ],
-    technologies: ['Scratch', 'HTML/CSS', 'Basic JavaScript']
+    technologies: ['Python', 'Visual Basic', 'Scripts', 'Macros'],
   },
   {
     id: 'non-tech-4',
-    company: 'DHL',
+    company: 'Some healthy products warehouse',
     role: 'Warehouse Associate',
-    period: 'Dec 2018 - Feb 2019',
-    image: getImagePath('/images/companies/default-logo.png'),
-    description: 'Seasonal position handling warehouse operations during holiday rush period.',
+    period: 'Nov 2024',
+    image: '',
+    description: 'It was just one day for Black Friday to <s>gain MONEY</s> help improve customer experience. But what a day!',
     responsibilities: [
       'Processed incoming and outgoing packages',
       'Organized inventory and maintained warehouse organization',
-      'Assisted with loading and unloading delivery vehicles'
-    ]
+      'Judged customers orders'
+    ],
+    technologies: ['Problem solver', 'Packaging', 'Networking'],
   },
   {
     id: 'non-tech-5',
     company: 'Madrid Community',
     role: 'COVID Masks Provider',
-    period: 'Apr 2020 - Jun 2020',
-    image: getImagePath('/images/companies/default-logo.png'),
-    description: 'Volunteer position during the COVID-19 pandemic for Madrid\'s Community election.',
+    period: 'May 2021',
+    image: '',
+    description: 'Mask provider during the COVID-19 pandemic for Madrid\'s Community election to <s>gain MONEY</s> help improve voters safety.',
+    link: 'https://www.20minutos.es/noticia/4658927/0/elecciones-madrid-2021-horario-personas-positivas-covid-votar-4-mayo/',
     responsibilities: [
-      'Distributed masks and other PPE to polling stations and voters',
-      'Ensured compliance with COVID-19 safety protocols',
-      'Assisted in organizing sanitization schedules and procedures'
+      'Distributed masks to voters on one voting station',
+      'Worked safely through the "Covid hour"',
+      'Met lot of nice people and helped them to exercise their right to vote safely!'
     ],
-    achievements: [
-      'Helped ensure safe voting conditions during a critical election period',
-      'Coordinated with multiple polling stations to optimize PPE distribution'
-    ]
+    technologies: ['Safety provider', 'Customer attention', 'Resilience'],
   }
 ];

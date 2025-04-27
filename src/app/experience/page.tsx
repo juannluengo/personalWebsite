@@ -15,7 +15,9 @@ const WorkExperienceCard: React.FC<{ item: WorkExperience }> = ({ item }) => (
         
         {/* Description */}
         {item.description && (
-          <p className="text-gray-400 text-sm mb-4 flex-grow">{item.description}</p>
+          <p className="text-gray-400 text-sm mb-4 flex-grow" 
+             dangerouslySetInnerHTML={{ __html: item.description }}>
+          </p>
         )}
         
         {/* Responsibilities */}
@@ -44,7 +46,7 @@ const WorkExperienceCard: React.FC<{ item: WorkExperience }> = ({ item }) => (
         
         {/* Technologies Tags */}
         {item.technologies && item.technologies.length > 0 && (
-          <div className="mt-auto pt-4 border-t border-gray-800">
+          <div className="pt-4 border-t border-gray-800">
             <div className="flex flex-wrap gap-2">
               {item.technologies.map((tech, index) => (
                 <span key={index} className="bg-gray-800 text-gray-300 text-xs font-medium px-2.5 py-1 rounded-md">
@@ -52,6 +54,23 @@ const WorkExperienceCard: React.FC<{ item: WorkExperience }> = ({ item }) => (
                 </span>
               ))}
             </div>
+          </div>
+        )}
+
+        {/* Link Button */}
+        {item.link && (
+          <div className="mt-4 pt-4 border-t border-gray-800">
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-4 py-2 bg-white text-black rounded-md hover:bg-white/90 transition-colors text-sm font-medium"
+            >
+              Visit 
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
           </div>
         )}
       </div>
@@ -81,7 +100,7 @@ export default function ExperiencePage() {
           {/* Larger heading */}
           <h1 className="text-5xl md:text-6xl font-bold text-center mb-6">Work Experience</h1>
           <p className="text-lg text-gray-400 text-center mb-20 max-w-3xl mx-auto">
-            A showcase of my professional journey and the companies I've had the privilege to work with throughout my career.
+            We are not all Mark Zuckerberg, some of us have to gain work experience before launching our own startup.
           </p>
 
           {/* Work Experience Section */}
