@@ -21,10 +21,10 @@ export default function EducationSection({ items }: EducationSectionProps) {
 
   // Get phases for each item
   const getPhase = (index: number) => {
-    if (index === 0) return { name: "Foundation", color: "from-blue-500" };
-    if (index === 1) return { name: "Development", color: "from-purple-500" };
+    if (index === 0) return { name: "Development", color: "from-blue-500" };
+    if (index === 1) return { name: "Specialization", color: "from-purple-500" };
     if (index === 2) return { name: "Specialization", color: "from-emerald-500" };
-    return { name: "Advancement", color: "from-amber-500" };
+    return { name: "Foundation", color: "from-amber-500" };
   };
 
   return (

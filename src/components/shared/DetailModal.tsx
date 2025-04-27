@@ -2,17 +2,24 @@
 
 import React from 'react';
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { ChevronRight } from 'lucide-react';
 
 interface DetailModalProps {
   isOpen: boolean;
   onClose: () => void;
   children: React.ReactNode;
+  title?: string;
+  onViewAll?: () => void;
+  viewAllText?: string;
 }
 
 const DetailModal: React.FC<DetailModalProps> = ({ 
   isOpen, 
   onClose, 
-  children 
+  children,
+  title,
+  onViewAll,
+  viewAllText
 }) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
@@ -24,7 +31,18 @@ const DetailModal: React.FC<DetailModalProps> = ({
           esc
         </button>
         <div className="pr-8">
+          {title && <h2 className="text-2xl font-bold text-white mb-4">{title}</h2>}
           {children}
+          {onViewAll && viewAllText && (
+            <div className="mt-6 pt-4 border-t border-zinc-800">
+              <button
+                onClick={onViewAll}
+                className="text-blue-400 hover:text-blue-300 text-sm flex items-center"
+              >
+                {viewAllText} <ChevronRight size={16} />
+              </button>
+            </div>
+          )}
         </div>
       </DialogContent>
     </Dialog>

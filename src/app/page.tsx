@@ -7,6 +7,7 @@ import { personalProjects, sideProjects, achievements } from '@/data/projects';
 import { educationHistory } from '@/data/education';
 import EducationSection from '@/components/home/EducationSection';
 import WorkExperienceSection from '@/components/home/WorkExperienceSection';
+import ProjectsSection from '@/components/home/ProjectsSection';
 
 export default function Home() {
   return (
@@ -21,16 +22,7 @@ export default function Home() {
         </div>
         
         <div id="personal-projects" className="mb-12">
-          <ContentSlider 
-            title="Personal Projects"
-            viewAllLink="/projects"
-            items={personalProjects.map(project => ({
-              id: project.id,
-              title: project.title,
-              image: project.image,
-              link: project.link || `/projects/${project.id}`
-            }))}
-          />
+          <ProjectsSection />
         </div>
 
         <div id="education-timeline" className="mb-12">

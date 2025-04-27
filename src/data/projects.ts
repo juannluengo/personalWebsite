@@ -11,44 +11,28 @@ export interface Project {
 // Personal projects data
 export const personalProjects: Project[] = [
   {
-    id: 'project-1',
-    title: 'Project One',
-    image: '/images/projects/project1-placeholder.jpg',
-    description: 'Description of your first project. Explain what problem it solves, what technologies you used, and what your role was in developing it.',
-    technologiesUsed: ['React', 'Node.js', 'MongoDB'],
-    link: 'https://project1.example.com'
+    id: 'project-coming-soon-1',
+    title: 'Coming Soon',
+    image: '/images/projects/ComingSoon.png',
+    description: 'An exciting new project that will be revealed soon. Stay tuned for updates!',
+    technologiesUsed: ['Confidential'],
+    status: 'Coming Soon'
   },
   {
-    id: 'project-2',
-    title: 'Project Two',
-    image: '/images/projects/project2-placeholder.jpg',
-    description: 'Description of your second project. Explain what problem it solves, what technologies you used, and what your role was in developing it.',
-    technologiesUsed: ['Vue.js', 'Firebase', 'TailwindCSS'],
-    link: 'https://project2.example.com'
+    id: 'project-coming-soon-2',
+    title: 'Coming Soon',
+    image: '/images/projects/ComingSoon.png',
+    description: 'Another innovative project currently in development. More details will be shared when ready.',
+    technologiesUsed: ['Confidential'],
+    status: 'Coming Soon'
   },
   {
-    id: 'project-3',
-    title: 'Project Three',
-    image: '/images/projects/project3-placeholder.jpg',
-    description: 'Description of your third project. Explain what problem it solves, what technologies you used, and what your role was in developing it.',
-    technologiesUsed: ['Angular', 'Express', 'PostgreSQL'],
-    link: 'https://project3.example.com'
-  },
-  {
-    id: 'project-4',
-    title: 'Project Four',
-    image: '/images/projects/project4-placeholder.jpg',
-    description: 'Description of your fourth project. Explain what problem it solves, what technologies you used, and what your role was in developing it.',
-    technologiesUsed: ['Next.js', 'Supabase', 'Framer Motion'],
-    link: 'https://project4.example.com'
-  },
-  {
-    id: 'project-5',
-    title: 'Project Five',
-    image: '/images/projects/project5-placeholder.jpg',
-    description: 'Description of your fifth project. Explain what problem it solves, what technologies you used, and what your role was in developing it.',
-    technologiesUsed: ['TypeScript', 'GraphQL', 'Material UI'],
-    link: 'https://project5.example.com'
+    id: 'points',
+    title: 'Points',
+    image: '/images/projects/Points.png',
+    description: 'An Apple Watch app initially developed for measuring padel points, which evolved to support tracking for various sports. The app provides real-time scoring and statistics for players who want to keep track of their performance.',
+    technologiesUsed: ['Swift', 'WatchKit', 'iOS Development', 'SwiftUI'],
+    status: 'Released'
   }
 ];
 
@@ -80,24 +64,6 @@ export const sideProjects: Project[] = [
     description: 'Description of your side project. These could be experiments, hobby projects, or work in progress.',
     technologiesUsed: ['Unity', 'C#', 'Blender'],
     link: 'https://sideproject3.example.com'
-  },
-  {
-    id: 'side-project-4',
-    title: 'Side Project Four',
-    image: '/images/projects/side-project4-placeholder.jpg',
-    status: 'New',
-    description: 'Description of your side project. These could be experiments, hobby projects, or work in progress.',
-    technologiesUsed: ['Rust', 'WebAssembly', 'Three.js'],
-    link: 'https://sideproject4.example.com'
-  },
-  {
-    id: 'side-project-5',
-    title: 'Side Project Five',
-    image: '/images/projects/side-project5-placeholder.jpg',
-    status: 'Completed',
-    description: 'Description of your side project. These could be experiments, hobby projects, or work in progress.',
-    technologiesUsed: ['Flutter', 'Dart', 'Firebase'],
-    link: 'https://sideproject5.example.com'
   }
 ];
 

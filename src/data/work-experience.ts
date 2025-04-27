@@ -60,7 +60,7 @@ export const workExperiences: WorkExperience[] = [
   {
     id: 'company-3',
     company: 'FTX',
-    role: 'Customer Support % Campus Ambassador',
+    role: 'Customer Support & Campus Ambassador',
     period: 'May 2021 - Nov 2022',
     image: getImagePath('/images/companies/ftxLogo.png'),
     imageSize: { width: 400, height: 30 },
