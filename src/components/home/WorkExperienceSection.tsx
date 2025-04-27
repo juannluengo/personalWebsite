@@ -56,8 +56,8 @@ const WorkExperienceSection = () => {
                             <Image
                               src={getImagePath(experience.image)}
                               alt={experience.company}
-                              width={experience.imageSize?.width || 100}
-                              height={experience.imageSize?.height || 50}
+                              width={150}
+                              height={150}
                               className="work-experience-logo object-contain"
                               unoptimized
                             />

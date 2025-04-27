@@ -70,33 +70,33 @@ export const experienceItems: ContentItem[] = [
     id: 'exp-1',
     title: 'Amazon',
     subtitle: 'Project Management Intern • Feb 2025 - Present',
-    image: '/images/companies/amazonLogo.png',
+    image: '/images/companies/AmazonAppIcon.png',
     link: '/experience#company-1',
-    imageSize: { width: 90, height: 30 }
+    imageSize: { width: 180, height: 180 }
   },
   {
     id: 'exp-2',
     title: 'Arup',
     subtitle: 'Software Developer Intern • Jul 2023 - Sep 2023',
-    image: '/images/companies/arupLogo.png',
+    image: '/images/companies/ArupAppIcon.png',
     link: '/experience#company-2',
-    imageSize: { width: 90, height: 30 }
+    imageSize: { width: 180, height: 180 }
   },
   {
     id: 'exp-3',
     title: 'FTX',
     subtitle: 'Customer Support & Campus Ambassador • May 2021 - Nov 2022',
-    image: '/images/companies/ftxLogo.png',
+    image: '/images/companies/FTXAppIcon.png',
     link: '/experience#company-3',
-    imageSize: { width: 150, height: 50 }
+    imageSize: { width: 180, height: 180 }
   },
   {
     id: 'exp-4',
     title: 'IMA',
     subtitle: 'Stagiaire Direction International • Jul 2022 - Sep 2022',
-    image: '/images/companies/imaLogo.png',
+    image: '/images/companies/IMAAppIcon.png',
     link: '/experience#company-4',
-    imageSize: { width: 150, height: 50 }
+    imageSize: { width: 180, height: 180 }
   }
 ];
 
@@ -114,4 +114,4 @@ export const featuredTabs: FeaturedTab[] = [
     id: 'featured-3',
     label: 'Contact'
   }
-]; 
+];

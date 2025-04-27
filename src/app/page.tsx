@@ -31,13 +31,13 @@ export default function Home() {
         
         <div id="side-projects" className="mb-12">
           <ContentSlider 
-            title="Side Projects & Experiments"
-            viewAllLink="/side-projects"
+            title="About me"
+            viewAllLink="/about-me"
             items={sideProjects.map(project => ({
               id: project.id,
               title: project.title,
               image: project.image,
-              link: project.link || `/side-projects/${project.id}`
+              link: project.link || `/about-me/${project.id}`
             }))}
           />
         </div>

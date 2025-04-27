@@ -24,8 +24,8 @@ export const workExperiences: WorkExperience[] = [
     company: 'Amazon',
     role: 'Project Manager Intern',
     period: 'Feb 2025 - Present',
-    image: getImagePath('/images/companies/amazonLogo.png'),
-    imageSize: { width: 100, height: 16 },
+    image: getImagePath('/images/companies/AmazonAppIcon.png'),
+    imageSize: { width: 80, height: 80 },
     description: 'Brief description of your role and responsibilities at this company. Highlight key achievements and skills developed during this position.',
     responsibilities: [
       'Led cross-functional teams to deliver project milestones',
@@ -43,8 +43,8 @@ export const workExperiences: WorkExperience[] = [
     company: 'Arup',
     role: 'Software Developer Intern',
     period: 'Jul 2023 - Sep 2023',
-    image: getImagePath('/images/companies/arupLogo.png'),
-    imageSize: { width: 80, height: 16 },
+    image: getImagePath('/images/companies/ArupAppIcon.png'),
+    imageSize: { width: 80, height: 80 },
     description: 'Brief description of your role and responsibilities at this company. Highlight key achievements and skills developed during this position.',
     responsibilities: [
       'Developed and maintained web applications',
@@ -62,8 +62,8 @@ export const workExperiences: WorkExperience[] = [
     company: 'FTX',
     role: 'Customer Support & Campus Ambassador',
     period: 'May 2021 - Nov 2022',
-    image: getImagePath('/images/companies/ftxLogo.png'),
-    imageSize: { width: 400, height: 30 },
+    image: getImagePath('/images/companies/FTXAppIcon.png'),
+    imageSize: { width: 80, height: 80 },
     description: 'Brief description of your role and responsibilities at this company. Highlight key achievements and skills developed during this position.',
     responsibilities: [
       'Provided technical support to users',
@@ -81,8 +81,8 @@ export const workExperiences: WorkExperience[] = [
     company: 'IMA Groupe',
     role: 'Stagiaire Direction International',
     period: 'Jul 2022 - Sep 2022',
-    image: getImagePath('/images/companies/imaLogo.png'),
-    imageSize: { width: 450, height: 30 },
+    image: getImagePath('/images/companies/IMAAppIcon.png'),
+    imageSize: { width: 80, height: 80 },
     description: 'Brief description of your role and responsibilities at this company. Highlight key achievements and skills developed during this position.',
     responsibilities: [
       'Assisted with international business development',
@@ -168,4 +168,4 @@ export const nonTechExperiences: WorkExperience[] = [
       'Coordinated with multiple polling stations to optimize PPE distribution'
     ]
   }
-]; 
+];

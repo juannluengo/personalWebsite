@@ -164,3 +164,9 @@
   font-family: 'SF Pro Display', sans-serif;
   font-weight: 600;
 }
+
+/* Custom styles for work experience logos */
+.work-experience-logo {
+  transform: scale(1);
+  margin-top: 0;
+}

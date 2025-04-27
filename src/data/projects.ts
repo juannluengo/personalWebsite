@@ -32,7 +32,8 @@ export const personalProjects: Project[] = [
     image: '/images/projects/Points.png',
     description: 'An Apple Watch app initially developed for measuring padel points, which evolved to support tracking for various sports. The app provides real-time scoring and statistics for players who want to keep track of their performance.',
     technologiesUsed: ['Swift', 'WatchKit', 'iOS Development', 'SwiftUI'],
-    status: 'Released'
+    status: 'Released',
+    link: 'https://github.com/juannluengo/sportCountTracker.git'
   }
 ];
 
@@ -44,8 +45,7 @@ export const sideProjects: Project[] = [
     image: '/images/projects/side-project1-placeholder.jpg',
     status: 'In Progress',
     description: 'Description of your side project. These could be experiments, hobby projects, or work in progress.',
-    technologiesUsed: ['Swift', 'SwiftUI', 'Core ML'],
-    link: 'https://sideproject1.example.com'
+    technologiesUsed: ['Swift', 'SwiftUI', 'Core ML']
   },
   {
     id: 'side-project-2',
@@ -53,8 +53,7 @@ export const sideProjects: Project[] = [
     image: '/images/projects/side-project2-placeholder.jpg',
     status: 'Completed',
     description: 'Description of your side project. These could be experiments, hobby projects, or work in progress.',
-    technologiesUsed: ['Python', 'TensorFlow', 'Scikit-learn'],
-    link: 'https://sideproject2.example.com'
+    technologiesUsed: ['Python', 'TensorFlow', 'Scikit-learn']
   },
   {
     id: 'side-project-3',
@@ -62,8 +61,7 @@ export const sideProjects: Project[] = [
     image: '/images/projects/side-project3-placeholder.jpg',
     status: 'On Hold',
     description: 'Description of your side project. These could be experiments, hobby projects, or work in progress.',
-    technologiesUsed: ['Unity', 'C#', 'Blender'],
-    link: 'https://sideproject3.example.com'
+    technologiesUsed: ['Unity', 'C#', 'Blender']
   }
 ];
 
