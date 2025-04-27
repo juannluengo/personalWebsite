@@ -51,7 +51,8 @@ const WorkExperienceSection = () => {
                       <div 
                         className="bg-zinc-800 rounded-lg p-4 cursor-pointer transition-transform hover:scale-105 h-full"
                       >
-                        <div className="relative aspect-video overflow-hidden rounded-lg mb-3 flex items-center justify-center" style={{paddingTop: '45px'}}>
+                        {/*  para cambiar la altura a la que salen los logos */}
+                        <div className="relative aspect-video overflow-hidden rounded-lg mb-3 flex items-center justify-center" style={{paddingTop: '0px'}}>
                           <div>
                             <Image
                               src={getImagePath(experience.image)}
