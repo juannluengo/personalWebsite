@@ -6,10 +6,59 @@ import { getImagePath } from '@/lib/utils';
 
 const WorkExperienceCard: React.FC<{ item: WorkExperience }> = ({ item }) => (
   <div id={item.id} className="bg-gray-900 rounded-lg shadow-xl overflow-hidden h-full transition-transform duration-300 hover:scale-[1.02]">
-    <div className="p-6 flex flex-col h-full">
-      {/* Company Logo */}
+    <div className="p-6 flex flex-row justify-between h-full">
+      {/* Text Content - Left Side */}
+      <div className="flex-1 pr-4">
+        <h3 className="text-xl font-bold text-white mb-1">{item.company}</h3>
+        <p className="text-base text-gray-300 mb-2">{item.role}</p>
+        <p className="text-sm text-gray-500 mb-4">{item.period}</p>
+        
+        {/* Description */}
+        {item.description && (
+          <p className="text-gray-400 text-sm mb-4 flex-grow">{item.description}</p>
+        )}
+        
+        {/* Responsibilities */}
+        {item.responsibilities && item.responsibilities.length > 0 && (
+          <div className="mb-4">
+            <h4 className="text-sm font-semibold text-white mb-2">Responsibilities:</h4>
+            <ul className="list-disc list-inside text-gray-400 text-sm space-y-1">
+              {item.responsibilities.map((responsibility, index) => (
+                <li key={index}>{responsibility}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+        
+        {/* Achievements */}
+        {item.achievements && item.achievements.length > 0 && (
+          <div className="mb-4">
+            <h4 className="text-sm font-semibold text-white mb-2">Achievements:</h4>
+            <ul className="list-disc list-inside text-gray-400 text-sm space-y-1">
+              {item.achievements.map((achievement, index) => (
+                <li key={index}>{achievement}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+        
+        {/* Technologies Tags */}
+        {item.technologies && item.technologies.length > 0 && (
+          <div className="mt-auto pt-4 border-t border-gray-800">
+            <div className="flex flex-wrap gap-2">
+              {item.technologies.map((tech, index) => (
+                <span key={index} className="bg-gray-800 text-gray-300 text-xs font-medium px-2.5 py-1 rounded-md">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Company Logo - Right Side */}
       {item.image && (
-        <div className="w-32 h-16 mb-4 mx-auto flex items-center justify-center">
+        <div className="w-32 flex-shrink-0 flex items-start justify-center">
           <Image 
             src={getImagePath(item.image)} 
             alt={`${item.company} logo`} 
@@ -18,53 +67,6 @@ const WorkExperienceCard: React.FC<{ item: WorkExperience }> = ({ item }) => (
             className="object-contain"
             unoptimized
           />
-        </div>
-      )}
-      
-      {/* Company & Role */}
-      <h3 className="text-xl font-bold text-white mb-1">{item.company}</h3>
-      <p className="text-base text-gray-300 mb-2">{item.role}</p>
-      <p className="text-sm text-gray-500 mb-4">{item.period}</p>
-      
-      {/* Description */}
-      {item.description && (
-        <p className="text-gray-400 text-sm mb-4 flex-grow">{item.description}</p>
-      )}
-      
-      {/* Responsibilities */}
-      {item.responsibilities && item.responsibilities.length > 0 && (
-        <div className="mb-4">
-          <h4 className="text-sm font-semibold text-white mb-2">Responsibilities:</h4>
-          <ul className="list-disc list-inside text-gray-400 text-sm space-y-1">
-            {item.responsibilities.map((responsibility, index) => (
-              <li key={index}>{responsibility}</li>
-            ))}
-          </ul>
-        </div>
-      )}
-      
-      {/* Achievements */}
-      {item.achievements && item.achievements.length > 0 && (
-        <div className="mb-4">
-          <h4 className="text-sm font-semibold text-white mb-2">Achievements:</h4>
-          <ul className="list-disc list-inside text-gray-400 text-sm space-y-1">
-            {item.achievements.map((achievement, index) => (
-              <li key={index}>{achievement}</li>
-            ))}
-          </ul>
-        </div>
-      )}
-      
-      {/* Technologies Tags */}
-      {item.technologies && item.technologies.length > 0 && (
-        <div className="mt-auto pt-4 border-t border-gray-800">
-          <div className="flex flex-wrap gap-2">
-            {item.technologies.map((tech, index) => (
-              <span key={index} className="bg-gray-800 text-gray-300 text-xs font-medium px-2.5 py-1 rounded-md">
-                {tech}
-              </span>
-            ))}
-          </div>
         </div>
       )}
     </div>

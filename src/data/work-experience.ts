@@ -26,17 +26,17 @@ export const workExperiences: WorkExperience[] = [
     period: 'Feb 2025 - Present',
     image: getImagePath('/images/companies/AmazonAppIcon.png'),
     imageSize: { width: 80, height: 80 },
-    description: 'Brief description of your role and responsibilities at this company. Highlight key achievements and skills developed during this position.',
+    description: '',
     responsibilities: [
-      'Led cross-functional teams to deliver project milestones',
-      'Managed project timelines and resources',
-      'Collaborated with stakeholders to define project requirements'
+      'SQL query master',
+      '360º camera whisperer and tour builder',
+      'Expert Python reporter'
     ],
     achievements: [
-      'Successfully delivered project ahead of schedule',
-      'Improved process efficiency by 15%'
+      '',
+      ''
     ],
-    technologies: ['AWS', 'Jira', 'Confluence', 'Agile']
+    technologies: ['AWS', 'QuickSight', 'SQL', 'Articulate360']
   },
   {
     id: 'company-2',
@@ -45,17 +45,18 @@ export const workExperiences: WorkExperience[] = [
     period: 'Jul 2023 - Sep 2023',
     image: getImagePath('/images/companies/ArupAppIcon.png'),
     imageSize: { width: 80, height: 80 },
-    description: 'Brief description of your role and responsibilities at this company. Highlight key achievements and skills developed during this position.',
+    description: 'Love moves mountains, or so they say. Lots of firsts in this internship. Learned a lot and meet really cool people.',
     responsibilities: [
-      'Developed and maintained web applications',
-      'Collaborated with design team to implement UI/UX improvements',
-      'Participated in code reviews and quality assurance'
+      'Application interoperability boss',
+      'Token integration wizzard. All smooth under my watch!',
+      'ENS brain. Standards and documentations, my day to day.'
     ],
     achievements: [
-      'Reduced application load time by 30%',
-      'Implemented new features used by over 100 employees'
+      'You see the logout button and automatic emails? That was all me baby!',
+      'Created 80\% of all ENS documentation and standards. Do not ask about this cause I suffered anough already.',
+      'How do we meassure token security and smoothness? Well it works now and I did it so I guess I should put it here.'
     ],
-    technologies: ['React', 'Node.js', 'TypeScript', 'MongoDB']
+    technologies: ['AWS', 'React.js', 'TypeScript', 'PostgreSQL', 'Git']
   },
   {
     id: 'company-3',
@@ -64,17 +65,19 @@ export const workExperiences: WorkExperience[] = [
     period: 'May 2021 - Nov 2022',
     image: getImagePath('/images/companies/FTXAppIcon.png'),
     imageSize: { width: 80, height: 80 },
-    description: 'Brief description of your role and responsibilities at this company. Highlight key achievements and skills developed during this position.',
+    description: 'We all know how this ended... Turns out they didn\'t have a the smartest people in the industry. Learned a lot though! And they truly gave me a chance to grow. I admire that.',
     responsibilities: [
-      'Provided technical support to users',
+      'Great university negotiator',
       'Represented the company at campus events',
-      'Created educational content about cryptocurrency'
+      'Client whisperer and app wizzard. No question was too hard'
     ],
     achievements: [
-      'Increased campus adoption by 25%',
-      'Recognized as top campus ambassador'
+      '0to1 agrrements with IE and UFV universities',
+      '23x spanish-speaking socials',
+      '100% success rate in customer support',
+      'Improved UX and KYC process (saved 3m/user)'
     ],
-    technologies: ['Cryptocurrency', 'Customer Service', 'Marketing']
+    technologies: ['UX/Ui', 'Customer Service', 'Marketing', 'Blockchain']
   },
   {
     id: 'company-4',
@@ -83,17 +86,17 @@ export const workExperiences: WorkExperience[] = [
     period: 'Jul 2022 - Sep 2022',
     image: getImagePath('/images/companies/IMAAppIcon.png'),
     imageSize: { width: 80, height: 80 },
-    description: 'Brief description of your role and responsibilities at this company. Highlight key achievements and skills developed during this position.',
+    description: 'First real office job. Turns out working with french isn\'t as bad as they say.',
     responsibilities: [
-      'Assisted with international business development',
-      'Conducted market research for expansion opportunities',
-      'Prepared reports and presentations for executive team'
+      'Your assistant\'s best friend. Checked all DB information',
+      'NFT program adaptation master',
+      'Great introductor. Added a few potential clients.'
     ],
     achievements: [
-      'Identified new market opportunities in 3 countries',
-      'Streamlined reporting process saving 5 hours per week'
+      '',
+      ''
     ],
-    technologies: ['Market Research', 'Business Development', 'International Relations']
+    technologies: ['Market Research', 'Agile', 'CRM', 'French']
   }
 ];
 
