@@ -54,7 +54,7 @@ export const workExperiences: WorkExperience[] = [
     ],
     achievements: [
       'You see the logout button and automatic emails? That was all me baby!',
-      'Created 80\% of all ENS documentation and standards. Do not ask about this cause I suffered anough already.',
+      'Created 80\% of all ENS documentation and standards. Do not ask about this cause I suffered enough already.',
       'How do we meassure token security and smoothness? Well it works now and I did it so I guess I should put it here.'
     ],
     technologies: ['AWS', 'React.js', 'TypeScript', 'PostgreSQL', 'Git']

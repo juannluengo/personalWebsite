@@ -8,6 +8,7 @@ import { educationHistory } from '@/data/education';
 import EducationSection from '@/components/home/EducationSection';
 import WorkExperienceSection from '@/components/home/WorkExperienceSection';
 import ProjectsSection from '@/components/home/ProjectsSection';
+import AboutSection from '@/components/home/AboutSection';
 
 export default function Home() {
   return (
@@ -29,17 +30,9 @@ export default function Home() {
            <EducationSection items={educationHistory} />
         </div>
         
-        <div id="side-projects" className="mb-12">
-          <ContentSlider 
-            title="About me"
-            viewAllLink="/about-me"
-            items={sideProjects.map(project => ({
-              id: project.id,
-              title: project.title,
-              image: project.image,
-              link: project.link || `/about-me/${project.id}`
-            }))}
-          />
+        {/* About Me Section with 4 parts */}
+        <div id="about-me" className="mb-12">
+          <AboutSection />
         </div>
         
         <div id="achievements">
