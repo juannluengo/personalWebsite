@@ -20,7 +20,7 @@ export const workExperiences: WorkExperience[] = [
     company: 'Amazon',
     role: 'Project Manager Intern',
     period: 'Feb 2025 - Present',
-    image: getImagePath('/images/companies/AmazonAppIcon.png'),
+    image: '/images/companies/AmazonAppIcon.png',
     imageSize: { width: 80, height: 80 },
     description: '',
     responsibilities: [
@@ -39,7 +39,7 @@ export const workExperiences: WorkExperience[] = [
     company: 'Arup',
     role: 'Software Developer Intern',
     period: 'Jul 2023 - Sep 2023',
-    image: getImagePath('/images/companies/ArupAppIcon.png'),
+    image: '/images/companies/ArupAppIcon.png',
     imageSize: { width: 80, height: 80 },
     description: 'Love moves mountains, or so they say. Lots of firsts in this internship. Learned a lot and meet really cool people.',
     responsibilities: [
@@ -59,7 +59,7 @@ export const workExperiences: WorkExperience[] = [
     company: 'FTX',
     role: 'Customer Support & Campus Ambassador',
     period: 'May 2021 - Nov 2022',
-    image: getImagePath('/images/companies/FTXAppIcon.png'),
+    image: '/images/companies/FTXAppIcon.png',
     imageSize: { width: 80, height: 80 },
     description: 'We all know how this ended... Turns out they didn\'t have a the smartest people in the industry. Learned a lot though! And they truly gave me a chance to grow. I admire that.',
     responsibilities: [
@@ -80,7 +80,7 @@ export const workExperiences: WorkExperience[] = [
     company: 'IMA Groupe',
     role: 'Stagiaire Direction International',
     period: 'Jul 2022 - Sep 2022',
-    image: getImagePath('/images/companies/IMAAppIcon.png'),
+    image: '/images/companies/IMAAppIcon.png',
     imageSize: { width: 80, height: 80 },
     description: 'First real office job. Turns out working with french isn\'t as bad as they say.',
     responsibilities: [
