@@ -1,19 +1,16 @@
 'use client'
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
-import DetailModal from '@/components/shared/DetailModal';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 
 interface AboutItem {
   id: string;
   title: string;
   description: string;
   image: string;
-  link: string;
 }
 
 const aboutItems: AboutItem[] = [
@@ -21,39 +18,29 @@ const aboutItems: AboutItem[] = [
     id: 'about-1',
     title: 'Personal Summary',
     description: 'A doer. A changemaker. A tech enthusiast. I thrive on challenges and love to learn new things.',
-    image: '/images/profile/AppIconNFTCalavera.png',
-    link: '/about-me#summary'
+    image: '/images/profile/AppIconNFTCalavera.png'
   },
   {
     id: 'about-2',
     title: 'Values & Goals',
     description: 'Driven by continuous learning, innovation, and the desire to make a positive impact through technology.',
-    image: '/images/projects/project3-placeholder.jpg',
-    link: '/about-me#values'
+    image: '/images/projects/project3-placeholder.jpg'
   },
   {
     id: 'about-3',
     title: 'Skills & Interests',
     description: 'Full-stack development, cloud services, and a passion for creating impactful technology solutions.',
-    image: '/images/projects/project2-placeholder.jpg',
-    link: '/about-me#skills'
+    image: '/images/projects/project2-placeholder.jpg'
+  },
+  {
+    id: 'about-4',
+    title: 'Career Path',
+    description: 'My professional journey, key milestones, and the experiences that have shaped my technical expertise.',
+    image: '/images/projects/project4-placeholder.jpg'
   }
 ];
 
 const AboutSection = () => {
-  const [selectedItem, setSelectedItem] = useState<AboutItem | null>(null);
-  const [modalOpen, setModalOpen] = useState(false);
-  const router = useRouter();
-
-  const openModal = (item: AboutItem) => {
-    setSelectedItem(item);
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalOpen(false);
-  };
-
   return (
     <div className="py-8">
       <div className="container mx-auto px-4">
@@ -75,28 +62,24 @@ const AboutSection = () => {
             <CarouselContent className="-ml-4">
               {aboutItems.map((item) => (
                 <CarouselItem key={item.id} className="pl-4 md:basis-1/3 lg:basis-1/4 xl:basis-1/5">
-                  <div className="h-full">
-                    <Link href={item.link} passHref>
-                      <div 
-                        className="bg-zinc-800 rounded-lg p-4 cursor-pointer transition-transform hover:scale-105 h-full"
-                      >
-                        <div className="relative aspect-square overflow-hidden rounded-lg mb-3 flex items-center justify-center bg-transparent">
-                          <Image
-                            src={item.image}
-                            alt={item.title}
-                            width={180}
-                            height={180}
-                            className="object-contain"
-                            unoptimized
-                          />
-                        </div>
-                        <div>
-                          <h3 className="text-white font-medium text-sm">{item.title}</h3>
-                          <p className="text-white/70 text-xs mt-1 line-clamp-2">{item.description}</p>
-                        </div>
+                  <Link href="/about-me" className="block h-full">
+                    <div className="h-full bg-zinc-800 rounded-lg p-4 cursor-pointer transition-all duration-200 hover:scale-105 hover:bg-zinc-700 group">
+                      <div className="relative aspect-square overflow-hidden rounded-lg mb-3 flex items-center justify-center bg-transparent">
+                        <Image
+                          src={item.image}
+                          alt={item.title}
+                          width={180}
+                          height={180}
+                          className="object-contain transform transition-transform duration-200 group-hover:scale-110"
+                          unoptimized
+                        />
                       </div>
-                    </Link>
-                  </div>
+                      <div>
+                        <h3 className="text-white font-medium text-sm group-hover:text-white/90">{item.title}</h3>
+                        <p className="text-white/70 text-xs mt-1 line-clamp-2 group-hover:text-white/80">{item.description}</p>
+                      </div>
+                    </div>
+                  </Link>
                 </CarouselItem>
               ))}
             </CarouselContent>
@@ -105,32 +88,6 @@ const AboutSection = () => {
           </Carousel>
         </div>
       </div>
-
-      {selectedItem && (
-        <DetailModal
-          isOpen={modalOpen}
-          onClose={closeModal}
-          title={selectedItem.title}
-          onViewAll={() => {
-            closeModal();
-            router.push('/about-me');
-          }}
-          viewAllText="View Full Profile"
-        >
-          <div className="space-y-4">
-            <div className="w-full h-40 relative rounded-md overflow-hidden">
-              <Image
-                src={selectedItem.image}
-                alt={selectedItem.title}
-                fill
-                className="object-cover"
-                unoptimized
-              />
-            </div>
-            <p className="text-gray-300">{selectedItem.description}</p>
-          </div>
-        </DetailModal>
-      )}
     </div>
   );
 };

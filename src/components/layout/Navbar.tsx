@@ -38,6 +38,9 @@ const Navbar = () => {
             <Button variant="link" className="text-white hover:text-white/80">
               <Link href="/socials">Contact</Link>
             </Button>
+            <Button variant="link" className="text-white hover:text-white/80">
+              <Link href="/about-me">About Me</Link>
+            </Button>
           </div>
         </div>
         <div className="flex items-center space-x-4">

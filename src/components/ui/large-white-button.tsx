@@ -1,8 +1,7 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 
-interface LargeWhiteButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
+type LargeWhiteButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>
 
 export function LargeWhiteButton({
   children,
