@@ -8,7 +8,8 @@ export default function imageLoader({ src }) {
   const cleanPath = src.startsWith('/') ? src.slice(1) : src;
   // In production (GitHub Pages), prefix with /personalWebsite
   if (!isDev) {
-    return `/personalWebsite/${cleanPath}`;
+    // Ensure we don't double-prefix the path
+    return cleanPath.startsWith('personalWebsite/') ? `/${cleanPath}` : `/personalWebsite/${cleanPath}`;
   }
   // In development, use the path as is, but ensure it starts with /
   return `/${cleanPath}`;
