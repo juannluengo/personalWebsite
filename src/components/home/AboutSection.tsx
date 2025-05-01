@@ -5,6 +5,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { getImagePath } from '@/lib/image-path';
 
 interface AboutItem {
   id: string;
@@ -66,7 +67,7 @@ const AboutSection = () => {
                     <div className="h-full bg-zinc-800 rounded-lg p-4 cursor-pointer transition-all duration-200 hover:scale-105 hover:bg-zinc-700 group">
                       <div className="relative aspect-square overflow-hidden rounded-lg mb-3 flex items-center justify-center bg-transparent">
                         <Image
-                          src={item.image}
+                          src={getImagePath(item.image)}
                           alt={item.title}
                           width={180}
                           height={180}

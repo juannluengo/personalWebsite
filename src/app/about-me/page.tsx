@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Layout from '@/components/layout/Layout';
 import Image from 'next/image';
 import DetailModal from '@/components/shared/DetailModal';
+import { getImagePath } from '@/lib/image-path';
 
 interface ModalContent {
   title: string;
@@ -40,7 +41,7 @@ export default function AboutMePage() {
               <div className="flex items-center justify-center">
                 <div className="relative w-[500px] h-[500px]">
                   <Image
-                    src="/images/profile/AppIconNFTCalavera.png"
+                    src={getImagePath('/images/profile/AppIconNFTCalavera.png')}
                     alt="NFT Profile"
                     fill
                     className="object-contain"
