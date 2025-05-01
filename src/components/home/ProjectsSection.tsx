@@ -8,6 +8,7 @@ import { personalProjects, Project } from '@/data/projects';
 import DetailModal from '@/components/shared/DetailModal';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { getImagePath } from '@/lib/image-path';
 
 const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -51,7 +52,7 @@ const ProjectsSection = () => {
                       >
                         <div className="relative aspect-video overflow-hidden rounded-lg mb-3 flex items-center justify-center">
                           <Image 
-                            src={project.image} 
+                            src={getImagePath(project.image)} 
                             alt={project.title}
                             width={100}
                             height={100}
@@ -94,7 +95,7 @@ const ProjectsSection = () => {
             {selectedProject.image && (
               <div className="w-full h-40 relative rounded-md overflow-hidden">
                 <Image
-                  src={selectedProject.image}
+                  src={getImagePath(selectedProject.image)}
                   alt={selectedProject.title}
                   fill
                   className="object-cover"

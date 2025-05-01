@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { personalInfo } from '@/data/personal';
+import { getImagePath } from '@/lib/image-path';
 
 const ProfileImage = () => {
   return (
@@ -23,9 +24,7 @@ const ProfileImage = () => {
           bg-gradient-to-t from-black/40 via-transparent to-black/40"></div>
           
         <Image
-          src={process.env.NODE_ENV === 'production' 
-            ? '/personalWebsite/images/profile/profile-placeholder.JPG'
-            : '/images/profile/profile-placeholder.JPG'}
+          src={getImagePath('/images/profile/profile-placeholder.JPG')}
           alt={personalInfo.name}
           fill
           priority
