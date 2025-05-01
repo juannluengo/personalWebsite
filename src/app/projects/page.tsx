@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '@/components/layout/Layout';
 import { personalProjects, sideProjects, achievements, Project } from '@/data/projects';
 import Image from 'next/image';
-import { getImagePath } from '@/lib/utils';
+import { getImagePath } from '@/lib/image-path';
 import Link from 'next/link';
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
@@ -12,7 +12,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
       {project.image && (
         <div className="w-full h-40 mb-4 relative rounded-md overflow-hidden flex items-center justify-center bg-gray-800">
           <Image 
-            src={project.image} 
+            src={getImagePath(project.image)} 
             alt={`${project.title}`}
             width={160}
             height={160} 

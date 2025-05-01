@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
+import { getImagePath } from '@/lib/image-path';
 
 const HeroCarousel = () => {
   return (
@@ -15,9 +16,7 @@ const HeroCarousel = () => {
             <div className="relative w-[80%] h-[80%] max-w-[500px] max-h-[600px]">
               <div className="absolute inset-0 w-full h-full z-10 bg-gradient-to-r from-transparent via-black/0 to-black pointer-events-none"></div>
               <Image
-                src={process.env.NODE_ENV === 'production' 
-                  ? '/personalWebsite/images/profile/profile-placeholder.JPG'
-                  : '/images/profile/profile-placeholder.JPG'}
+                src={getImagePath('/images/profile/profile-placeholder.JPG')}
                 alt="Your Name"
                 fill
                 priority

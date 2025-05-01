@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { getImagePath } from '@/lib/image-path';
 
 const Navbar = () => {
   return (
@@ -12,9 +13,7 @@ const Navbar = () => {
           <Link href="/" className="flex items-center">
             <div className="text-white flex items-center">
               <Image 
-                src={process.env.NODE_ENV === 'production' 
-                  ? '/personalWebsite/images/NFTCalavera.png'
-                  : '/images/NFTCalavera.png'} 
+                src={getImagePath('/images/NFTCalavera.png')} 
                 alt="Logo" 
                 width={32} 
                 height={32} 

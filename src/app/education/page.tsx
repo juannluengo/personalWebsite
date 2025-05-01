@@ -3,6 +3,7 @@ import Layout from '@/components/layout/Layout';
 import { educationHistory, EducationItem } from '@/data/education';
 import Image from 'next/image';
 import Link from 'next/link';
+import { getImagePath } from '@/lib/image-path';
 
 // Separate formal education from other courses
 const educationDegrees = educationHistory;
@@ -15,7 +16,7 @@ const EducationCard: React.FC<{ item: EducationItem }> = ({ item }) => (
       {/* Optional Institution Logo */}
       {item.logo && (
         <div className="w-12 h-12 mb-4 mx-auto">
-          <Image src={item.logo} alt={`${item.institution} logo`} width={48} height={48} className="rounded-full" />
+          <Image src={getImagePath(item.logo)} alt={`${item.institution} logo`} width={48} height={48} className="rounded-full" />
         </div>
       )}
       
