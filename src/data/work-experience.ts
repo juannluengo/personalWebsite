@@ -12,12 +12,7 @@ export interface WorkExperience {
   link?: string;
 }
 
-// Helper function to get the correct image path based on environment
-const getImagePath = (path: string): string => {
-  return process.env.NODE_ENV === 'production'
-    ? `/personalWebsite${path}`
-    : path;
-};
+import { getImagePath } from '@/lib/image-path';
 
 export const workExperiences: WorkExperience[] = [
   {
