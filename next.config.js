@@ -7,6 +7,7 @@ const nextConfig = {
     unoptimized: true,
     loader: 'custom',
     loaderFile: './image-loader.js',
+    path: process.env.NODE_ENV === 'production' ? '/personalWebsite' : '',
   },
 };
 

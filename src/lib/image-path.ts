@@ -7,11 +7,6 @@ export function getImagePath(path: string): string {
   // Remove leading slash if present
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
 
-  // Add the personalWebsite prefix in production
-  if (process.env.NODE_ENV === 'production') {
-    return `/personalWebsite/${cleanPath}`;
-  }
-
-  // In development, just ensure the path starts with /
+  // Return the clean path (Next.js image loader will handle prefixing)
   return `/${cleanPath}`;
 }
