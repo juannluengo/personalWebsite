@@ -19,25 +19,25 @@ const aboutItems: AboutItem[] = [
     id: 'about-1',
     title: 'Personal Summary',
     description: 'A doer. A changemaker. A tech enthusiast. I thrive on challenges and love to learn new things.',
-    image: '/images/profile/AppIconNFTCalavera.png'
+    image: 'images/profile/AppIconNFTCalavera.png'
   },
   {
     id: 'about-2',
     title: 'Values & Goals',
     description: 'Driven by continuous learning, innovation, and the desire to make a positive impact through technology.',
-    image: '/images/projects/project3-placeholder.jpg'
+    image: 'images/projects/project3-placeholder.jpg'
   },
   {
     id: 'about-3',
     title: 'Skills & Interests',
     description: 'Full-stack development, cloud services, and a passion for creating impactful technology solutions.',
-    image: '/images/projects/project2-placeholder.jpg'
+    image: 'images/projects/project2-placeholder.jpg'
   },
   {
     id: 'about-4',
     title: 'Career Path',
     description: 'My professional journey, key milestones, and the experiences that have shaped my technical expertise.',
-    image: '/images/projects/project4-placeholder.jpg'
+    image: 'images/projects/project4-placeholder.jpg'
   }
 ];
 

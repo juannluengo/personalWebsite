@@ -5,6 +5,8 @@ const nextConfig = {
   assetPrefix: process.env.NODE_ENV === 'production' ? '/personalWebsite/' : '',
   images: {
     unoptimized: true,
+    loader: 'custom',
+    loaderFile: './image-loader.js',
   },
 };
 
