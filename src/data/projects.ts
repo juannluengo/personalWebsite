@@ -29,7 +29,7 @@ export const personalProjects: Project[] = [
   {
     id: 'points',
     title: 'Points',
-    image: '/images/projects/Points.png',
+    image: '/images/projects/PointsAppIcon.png',
     description: 'An Apple Watch app initially developed for measuring padel points, which evolved to support tracking for various sports. The app provides real-time scoring and statistics for players who want to keep track of their performance.',
     technologiesUsed: ['Swift', 'WatchKit', 'iOS Development', 'SwiftUI'],
     status: 'Released',

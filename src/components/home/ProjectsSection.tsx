@@ -54,9 +54,9 @@ const ProjectsSection = () => {
                           <Image 
                             src={getImagePath(project.image)} 
                             alt={project.title}
-                            width={100}
-                            height={100}
-                            className="object-contain"
+                            width={180}
+                            height={180}
+                            className="object-contain transition-transform duration-200 hover:scale-105"
                             unoptimized
                           />
                         </div>

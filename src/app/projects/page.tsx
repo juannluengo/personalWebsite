@@ -14,8 +14,8 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
           <Image 
             src={getImagePath(project.image)} 
             alt={`${project.title}`}
-            width={160}
-            height={160} 
+            width={200}
+            height={200} 
             className="object-contain"
             unoptimized
           />
