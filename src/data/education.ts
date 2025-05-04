@@ -18,8 +18,8 @@ export const educationHistory: EducationItem[] = [
     dates: '2023 - 2024',
     description: 'Erasmus Program with courses from the Master in Engineering Computer Science.',
     skills: ['Distributed Systems', 'LaTeX', 'Price Optimization', 'Big Data', 'Logistics Management', 'Cyber-Physical Systems', 'Nginx'],
-    logo: '/images/universities/tue.png',
-    iconImage: '/images/universities/tue.png',
+    logo: '/images/universities/TUeAppIcon.png',
+    iconImage: '/images/universities/TUeAppIcon.png',
     status: 'Completed'
   },
   {
@@ -29,8 +29,8 @@ export const educationHistory: EducationItem[] = [
     dates: '2020 - 2025',
     description: 'Core computer science curriculum focusing on programming, algorithms, and systems architecture.',
     skills: ['C', 'Bash', 'Java', 'Algoritmos', 'SQL', 'Cálculo', 'Estructuras de datos', 'Arquitectura de sistemas'],
-    logo: '/images/universities/UPM.png',
-    iconImage: '/images/universities/UPM.png',
+    logo: '/images/universities/UPMAppIcon.png',
+    iconImage: '/images/universities/UPMAppIcon.png',
     status: 'Ongoing'
   },
   {
@@ -40,8 +40,8 @@ export const educationHistory: EducationItem[] = [
     dates: '2020 - 2025',
     description: 'Direction and Management of Information Technologies in Business',
     skills: ['Macroeconomía', 'Análisis de negocio', 'Contabilidad', 'Power BI', 'Análisis financiero'],
-    logo: '/images/universities/UPM.png',
-    iconImage: '/images/universities/UPM.png',
+    logo: '/images/universities/UPMAppIcon.png',
+    iconImage: '/images/universities/UPMAppIcon.png',
     status: 'Ongoing'
   },
   {
@@ -51,7 +51,7 @@ export const educationHistory: EducationItem[] = [
     dates: '2018 - 2020',
     description: 'Technological sciences',
     skills: ['Oratory', 'Entrepreneurship', 'Technology', 'Languages'],
-    logo: '/images/universities/SEK.png',
+    logo: '/images/universities/SEKAppIcon.png',
     iconImage: '/images/universities/SEKAppIcon.png',
     status: 'Completed'
   },

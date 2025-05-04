@@ -52,8 +52,8 @@ const WorkExperienceSection = () => {
                         className="bg-zinc-800 rounded-lg p-4 cursor-pointer transition-transform hover:scale-105 h-full"
                       >
                         {/*  para cambiar la altura a la que salen los logos */}
-                        <div className="relative aspect-video overflow-hidden rounded-lg mb-3 flex items-center justify-center" style={{paddingTop: '0px'}}>
-                          <div>
+                        <div className="relative aspect-video overflow-hidden rounded-lg mb-3 flex items-center justify-center">
+                          <div className="h-36 w-36 flex items-center justify-center">
                             <Image
                               src={getImagePath(experience.image)}
                               alt={experience.company}
@@ -61,6 +61,7 @@ const WorkExperienceSection = () => {
                               height={150}
                               className="work-experience-logo object-contain"
                               unoptimized
+                              priority
                             />
                           </div>
                         </div>
@@ -85,14 +86,15 @@ const WorkExperienceSection = () => {
         <DetailModal isOpen={modalOpen} onClose={closeModal}>
           <div className="py-4">
             <div className="flex items-center mb-4">
-              <div className="relative h-14 w-14 overflow-hidden rounded-lg flex items-center justify-center bg-zinc-800 p-2 mr-4">
+              <div className="relative h-16 w-16 overflow-hidden rounded-lg flex items-center justify-center bg-zinc-800 p-2 mr-4">
                 <Image
                   src={getImagePath(selectedExperience.image)}
                   alt={selectedExperience.company}
-                  width={100}
-                  height={50}
+                  width={120}
+                  height={120}
                   className="object-contain"
                   unoptimized
+                  priority
                 />
               </div>
               <div>

@@ -34,15 +34,18 @@ const ProjectDialog: React.FC<ProjectDialogProps> = ({ content, children }) => {
                 <p className="text-white/90">{content.description}</p>
               )}
             </div>
-            <div className="w-32 flex-shrink-0 flex items-start justify-center">
-              <Image
-                src={getImagePath(content.image)}
-                alt={content.title}
-                width={120}
-                height={120}
-                className="object-contain"
-                unoptimized
-              />
+            <div className="w-32 flex-shrink-0 flex items-center justify-center">
+              <div className="h-28 w-28 flex items-center justify-center">
+                <Image
+                  src={getImagePath(content.image)}
+                  alt={content.title}
+                  width={150}
+                  height={150}
+                  className="object-contain"
+                  unoptimized
+                  priority
+                />
+              </div>
             </div>
           </div>
           {content.technologiesUsed && content.technologiesUsed.length > 0 && (

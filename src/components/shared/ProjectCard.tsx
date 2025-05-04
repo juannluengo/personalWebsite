@@ -20,15 +20,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ content }) => {
               <p className="text-white/60 text-xs mt-1">{content.status}</p>
             )}
           </div>
-          <div className="w-14 flex-shrink-0">
+          <div className="w-20 flex-shrink-0 flex items-center justify-center">
             <Image
               src={getImagePath(content.image)}
               alt={content.title}
-              width={56}
-              height={56}
+              width={80}
+              height={80}
               className="object-contain"
               unoptimized
               loading="eager"
+              priority
             />
           </div>
         </div>

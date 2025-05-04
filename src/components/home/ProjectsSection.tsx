@@ -51,7 +51,7 @@ const ProjectsSection = () => {
                         className="bg-zinc-800 rounded-lg p-4 cursor-pointer transition-transform hover:scale-105 h-full"
                       >
                         <div className="relative aspect-video overflow-hidden rounded-lg mb-3 flex items-center justify-center">
-                          <div>
+                          <div className="h-36 w-36 flex items-center justify-center">
                             <Image
                               src={getImagePath(project.image)}
                               alt={project.title}
@@ -59,6 +59,7 @@ const ProjectsSection = () => {
                               height={150}
                               className="object-contain"
                               unoptimized
+                              priority
                             />
                           </div>
                         </div>
@@ -95,14 +96,15 @@ const ProjectsSection = () => {
         >
           <div className="space-y-4">
             <div className="flex items-center mb-4">
-              <div className="relative h-14 w-14 overflow-hidden rounded-lg flex items-center justify-center bg-zinc-800 p-2 mr-4">
+              <div className="relative h-16 w-16 overflow-hidden rounded-lg flex items-center justify-center bg-zinc-800 p-2 mr-4">
                 <Image
                   src={getImagePath(selectedProject.image)}
                   alt={selectedProject.title}
-                  width={100}
-                  height={100}
+                  width={120}
+                  height={120}
                   className="object-contain"
                   unoptimized
+                  priority
                 />
               </div>
               <div>

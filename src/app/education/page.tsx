@@ -58,15 +58,18 @@ const EducationCard: React.FC<{ item: EducationItem }> = ({ item }) => (
       
       {/* Institution Logo - Right Side */}
       {item.logo && (
-        <div className="w-32 flex-shrink-0 flex items-start justify-center">
-          <Image 
-            src={getImagePath(item.id === 'sek' ? '/images/universities/SEKAppIcon.png' : item.logo)} 
-            alt={`${item.institution} logo`} 
-            width={100} 
-            height={50}
-            className="object-contain"
-            unoptimized
-          />
+        <div className="w-32 flex-shrink-0 flex items-center justify-center">
+          <div className="h-28 w-28 flex items-center justify-center">
+            <Image 
+              src={getImagePath(item.logo)} 
+              alt={`${item.institution} logo`} 
+              width={150} 
+              height={150}
+              className="object-contain"
+              unoptimized
+              priority
+            />
+          </div>
         </div>
       )}
     </div>
