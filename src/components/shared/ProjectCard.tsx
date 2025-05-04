@@ -13,21 +13,24 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ content }) => {
   return (
     <Card className="bg-transparent border-none content-card cursor-pointer transition-transform hover:scale-105">
       <CardContent className="p-0">
-        <div className="relative aspect-video overflow-hidden rounded-lg card-image">
-          <Image
-            src={getImagePath(content.image)}
-            alt={content.title}
-            fill
-            className="object-cover"
-            unoptimized
-            loading="eager"
-          />
-        </div>
-        <div className="mt-2">
-          <h3 className="text-white font-medium text-sm truncate">{content.title}</h3>
-          {content.status && (
-            <p className="text-white/60 text-xs mt-1">{content.status}</p>
-          )}
+        <div className="flex flex-row items-start">
+          <div className="flex-1 pr-3">
+            <h3 className="text-white font-medium text-sm truncate">{content.title}</h3>
+            {content.status && (
+              <p className="text-white/60 text-xs mt-1">{content.status}</p>
+            )}
+          </div>
+          <div className="w-14 flex-shrink-0">
+            <Image
+              src={getImagePath(content.image)}
+              alt={content.title}
+              width={56}
+              height={56}
+              className="object-contain"
+              unoptimized
+              loading="eager"
+            />
+          </div>
         </div>
       </CardContent>
     </Card>

@@ -51,14 +51,16 @@ const ProjectsSection = () => {
                         className="bg-zinc-800 rounded-lg p-4 cursor-pointer transition-transform hover:scale-105 h-full"
                       >
                         <div className="relative aspect-video overflow-hidden rounded-lg mb-3 flex items-center justify-center">
-                          <Image 
-                            src={getImagePath(project.image)} 
-                            alt={project.title}
-                            width={180}
-                            height={180}
-                            className="object-contain transition-transform duration-200 hover:scale-105"
-                            unoptimized
-                          />
+                          <div>
+                            <Image
+                              src={getImagePath(project.image)}
+                              alt={project.title}
+                              width={150}
+                              height={150}
+                              className="object-contain"
+                              unoptimized
+                            />
+                          </div>
                         </div>
                         <div>
                           <h3 className="text-white font-medium text-sm">{project.title}</h3>
@@ -92,26 +94,29 @@ const ProjectsSection = () => {
           viewAllText="View All Projects"
         >
           <div className="space-y-4">
-            {selectedProject.image && (
-              <div className="w-full h-40 relative rounded-md overflow-hidden">
+            <div className="flex items-center mb-4">
+              <div className="relative h-14 w-14 overflow-hidden rounded-lg flex items-center justify-center bg-zinc-800 p-2 mr-4">
                 <Image
                   src={getImagePath(selectedProject.image)}
                   alt={selectedProject.title}
-                  fill
-                  className="object-cover"
+                  width={100}
+                  height={100}
+                  className="object-contain"
                   unoptimized
                 />
               </div>
-            )}
-            
-            {selectedProject.status && (
-              <p className={`text-sm ${selectedProject.status === 'Coming Soon' ? 'text-yellow-500' : 'text-green-500'}`}>
-                {selectedProject.status}
-              </p>
-            )}
+              <div>
+                <h2 className="text-xl font-bold text-white">{selectedProject.title}</h2>
+                {selectedProject.status && (
+                  <p className={`text-sm ${selectedProject.status === 'Coming Soon' ? 'text-yellow-500' : 'text-green-500'}`}>
+                    {selectedProject.status}
+                  </p>
+                )}
+              </div>
+            </div>
             
             {selectedProject.description && (
-              <p className="text-gray-300">{selectedProject.description}</p>
+              <p className="text-gray-300 mt-2 mb-4">{selectedProject.description}</p>
             )}
             
             {selectedProject.technologiesUsed && selectedProject.technologiesUsed.length > 0 && (

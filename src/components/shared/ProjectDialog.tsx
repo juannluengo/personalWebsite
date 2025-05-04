@@ -25,18 +25,26 @@ const ProjectDialog: React.FC<ProjectDialogProps> = ({ content, children }) => {
           )}
         </DialogHeader>
         <div className="mt-4">
-          <div className="relative aspect-video w-full overflow-hidden rounded-lg mb-4">
-            <Image
-              src={getImagePath(content.image)}
-              alt={content.title}
-              fill
-              className="object-cover"
-              unoptimized
-            />
+          <div className="flex items-start mb-6">
+            <div className="flex-1 pr-4">
+              {content.status && (
+                <p className="text-sm text-white/70 mb-2">{content.status}</p>
+              )}
+              {content.description && (
+                <p className="text-white/90">{content.description}</p>
+              )}
+            </div>
+            <div className="w-32 flex-shrink-0 flex items-start justify-center">
+              <Image
+                src={getImagePath(content.image)}
+                alt={content.title}
+                width={120}
+                height={120}
+                className="object-contain"
+                unoptimized
+              />
+            </div>
           </div>
-          {content.description && (
-            <p className="text-white/90 mb-4">{content.description}</p>
-          )}
           {content.technologiesUsed && content.technologiesUsed.length > 0 && (
             <div className="mb-4">
               <h4 className="text-sm font-semibold text-white/90 mb-2">Technologies Used:</h4>
