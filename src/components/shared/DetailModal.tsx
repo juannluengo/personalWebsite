@@ -26,7 +26,7 @@ const DetailModal: React.FC<DetailModalProps> = ({
       <DialogContent className="sm:max-w-[600px] max-h-[80vh] overflow-y-auto bg-zinc-900 text-white border border-zinc-800 !pr-8">
         <button 
           onClick={onClose}
-          className="absolute right-4 top-4 bg-zinc-800 hover:bg-zinc-700 rounded p-1 text-white/70 hover:text-white text-xs"
+          className="absolute right-4 top-4 bg-zinc-800 hover:bg-zinc-700 rounded px-3 py-1.5 text-white/70 hover:text-white text-sm"
         >
           esc
         </button>

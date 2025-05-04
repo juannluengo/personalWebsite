@@ -133,7 +133,7 @@ const ProjectsSection = () => {
                   href={selectedProject.link}
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 transition-colors"
+                  className="inline-flex items-center px-4 py-2 bg-white text-black text-sm font-medium rounded-md hover:bg-white/90 transition-colors"
                 >
                   View Project
                 </a>

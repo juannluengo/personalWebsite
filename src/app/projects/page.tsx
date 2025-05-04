@@ -61,7 +61,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
             href={project.link}
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-xs font-medium rounded-md hover:bg-blue-700 transition-colors"
+            className="inline-flex items-center px-4 py-2 bg-white text-black text-xs font-medium rounded-md hover:bg-white/90 transition-colors"
           >
             View Project
             <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
