@@ -8,7 +8,7 @@ import { EducationItem } from '@/data/education';
 import DetailModal from '@/components/shared/DetailModal';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { getImagePath } from '@/lib/image-path';
+import { getImagePath } from '@/lib/utils';
 
 interface EducationSectionProps {
   items: EducationItem[];
@@ -61,25 +61,27 @@ export default function EducationSection({ items }: EducationSectionProps) {
                       <div 
                         className="bg-zinc-800 rounded-lg p-4 cursor-pointer transition-transform hover:scale-105 h-full"
                       >
-                        <div className="relative aspect-video overflow-hidden rounded-lg mb-3 flex items-center justify-center">
-                          <Image 
-                            src={getImagePath(education.id === 'sek' ? '/images/universities/SEKAppIcon.png' : education.iconImage)} 
-                            alt={education.institution}
-                            width={150}
-                            height={150}
-                            className="object-contain transition-transform duration-200 hover:scale-105"
-                            unoptimized
-                          />
-                        </div>
-                        <div>
-                          <h3 className="text-white font-medium text-sm">{education.institution}</h3>
-                          <p className="text-white/70 text-xs mt-1">{education.degree}</p>
-                          <p className="text-white/60 text-xs">{education.dates}</p>
-                          {education.status && (
-                            <p className={`text-xs mt-1 ${education.status === 'Ongoing' ? 'text-yellow-400' : education.status === 'Completed' ? 'text-green-400' : 'text-blue-400'}`}>
-                              {education.status}
-                            </p>
-                          )}
+                        <div className="flex justify-between">
+                          <div className="flex-1 pr-2">
+                            <h3 className="text-white font-medium text-sm">{education.institution}</h3>
+                            <p className="text-white/70 text-xs mt-1">{education.degree}</p>
+                            <p className="text-white/60 text-xs">{education.dates}</p>
+                            {education.status && (
+                              <p className={`text-xs mt-1 ${education.status === 'Ongoing' ? 'text-yellow-400' : education.status === 'Completed' ? 'text-green-400' : 'text-blue-400'}`}>
+                                {education.status}
+                              </p>
+                            )}
+                          </div>
+                          <div className="w-16 flex-shrink-0 flex items-start justify-center">
+                            <Image 
+                              src={getImagePath(education.id === 'sek' ? '/images/universities/SEKAppIcon.png' : education.iconImage)} 
+                              alt={education.institution}
+                              width={50}
+                              height={50}
+                              className="object-contain"
+                              unoptimized
+                            />
+                          </div>
                         </div>
                       </div>
                     </Link>
@@ -105,26 +107,28 @@ export default function EducationSection({ items }: EducationSectionProps) {
           viewAllText="View Full Education"
         >
           <div className="space-y-4">
-            <div className="relative h-14 w-14 overflow-hidden rounded-lg flex items-center justify-center bg-zinc-800 p-2 mr-4">
-              <Image
-                src={getImagePath(selectedEducation.id === 'sek' ? '/images/universities/SEKAppIcon.png' : selectedEducation.iconImage)}
-                alt={selectedEducation.institution}
-                width={100}
-                height={50}
-                className="object-contain"
-                unoptimized
-              />
-            </div>
-            
-            <div>
-              <h3 className="text-lg font-bold text-white">{selectedEducation.degree}</h3>
-              <p className="text-white/70 text-sm">{selectedEducation.dates}</p>
+            <div className="flex items-center mb-4">
+              <div className="flex-1 pr-4">
+                <h3 className="text-lg font-bold text-white">{selectedEducation.degree}</h3>
+                <p className="text-white/70 text-sm">{selectedEducation.dates}</p>
+                
+                {selectedEducation.status && (
+                  <p className={`text-sm mt-1 ${selectedEducation.status === 'Ongoing' ? 'text-yellow-500' : selectedEducation.status === 'Completed' ? 'text-green-500' : 'text-blue-500'}`}>
+                    {selectedEducation.status}
+                  </p>
+                )}
+              </div>
               
-              {selectedEducation.status && (
-                <p className={`text-sm mt-1 ${selectedEducation.status === 'Ongoing' ? 'text-yellow-500' : selectedEducation.status === 'Completed' ? 'text-green-500' : 'text-blue-500'}`}>
-                  {selectedEducation.status}
-                </p>
-              )}
+              <div className="w-24 flex-shrink-0 flex items-start justify-center">
+                <Image
+                  src={getImagePath(selectedEducation.id === 'sek' ? '/images/universities/SEKAppIcon.png' : selectedEducation.iconImage)}
+                  alt={selectedEducation.institution}
+                  width={80}
+                  height={80}
+                  className="object-contain"
+                  unoptimized
+                />
+              </div>
             </div>
             
             {selectedEducation.description && (
