@@ -62,12 +62,12 @@ export default function EducationSection({ items }: EducationSectionProps) {
                         className="bg-zinc-800 rounded-lg p-4 cursor-pointer transition-transform hover:scale-105 h-full"
                       >
                         <div className="relative aspect-video overflow-hidden rounded-lg mb-3 flex items-center justify-center">
-                          <div className="h-36 w-36 flex items-center justify-center">
+                          <div className={`flex items-center justify-center relative ${['tue', 'upm-cs', 'upm-bba'].includes(education.id) ? 'h-44 w-44' : 'h-36 w-36'}`}>
                             <Image
                               src={getImagePath(education.iconImage)}
                               alt={education.institution}
-                              width={150}
-                              height={150}
+                              fill
+                              sizes="176px"
                               className="object-contain"
                               unoptimized
                               priority

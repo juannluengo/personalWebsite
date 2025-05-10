@@ -56,15 +56,15 @@ const EducationCard: React.FC<{ item: EducationItem }> = ({ item }) => (
         )}
       </div>
       
-      {/* Institution Logo - Right Side */}
+      {/* Institution Logo - Top Right */}
       {item.logo && (
-        <div className="w-32 flex-shrink-0 flex items-center justify-center">
-          <div className="h-28 w-28 flex items-center justify-center">
+        <div className="w-32 flex-shrink-0 flex items-start justify-end ml-4">
+          <div className={`${['tue', 'upm-cs', 'upm-bba'].includes(item.id) ? 'h-32 w-32' : 'h-28 w-28'} flex items-center justify-center relative`}>
             <Image 
               src={getImagePath(item.logo)} 
               alt={`${item.institution} logo`} 
-              width={150} 
-              height={150}
+              fill
+              sizes={['tue', 'upm-cs', 'upm-bba'].includes(item.id) ? '128px' : '112px'}
               className="object-contain"
               unoptimized
               priority
