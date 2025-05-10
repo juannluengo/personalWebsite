@@ -99,7 +99,7 @@ export default function AboutMePage() {
                         </div>
                         <div>
                           <h4 className="text-white font-semibold mb-2">👉 There's always a better way</h4>
-                          <p className="text-gray-300">Never settling for “good enough” when things can be faster, simpler, or more effective. It's about assuming that improvement is always possible. Hunt friction, even the invisible kind.</p>
+                          <p className="text-gray-300">Never settling for "good enough" when things can be faster, simpler, or more effective. It's about assuming that improvement is always possible. Hunt friction, even the invisible kind.</p>
                         </div>
                       </div>
                     </div>
@@ -156,27 +156,27 @@ export default function AboutMePage() {
                       <p className="text-gray-300">My goals are driven by a desire to make a meaningful impact. My greatest achivements will be measured not by the status or money but by the smiles I was able to put on people's faces and the relive I was able to give them.</p>
                       <div className="space-y-4">
                         <div>
-                          <h4 className="text-white font-semibold mb-2">Create meaning with impact</h4>
+                          <h4 className="text-white font-semibold mb-2">👉 Create meaning with impact</h4>
                           <p className="text-gray-300">I don't just want to build. I want to make something that matters. A product, a system or a movement. Something that makes people's lives better in real, tangible ways.</p>
                         </div>
                         <div>
-                          <h4 className="text-white font-semibold mb-2">Leave a mark, not a footprint</h4>
+                          <h4 className="text-white font-semibold mb-2">👉 Leave a mark, not a footprint</h4>
                           <p className="text-gray-300">I want to exit the world better than I found it. Smarter systems, more human connections and fewer pointless frictions. Legacy through contribution. Individually, on my corner of world, and globally, through the impact of the systems I help create.</p>
                         </div>
                         <div>
-                          <h4 className="text-white font-semibold mb-2">Build something people actually use</h4>
+                          <h4 className="text-white font-semibold mb-2">👉 Build something people actually use</h4>
                           <p className="text-gray-300">Not vaporware. Not slides. I want to create things that are used, loved, and even depended on. Where code, design, and vision meet real need.</p>
                         </div>
                         <div>
-                          <h4 className="text-white font-semibold mb-2">Fully experience life, not just pass through it</h4>
+                          <h4 className="text-white font-semibold mb-2">👉 Fully experience life, not just pass through it</h4>
                           <p className="text-gray-300">We only get one shot at this. I want to live a life that is worth remembering. Happiness, in all its forms, is everyones goal.</p>
                         </div>
                         <div>
-                          <h4 className="text-white font-semibold mb-2">Learn relentlessly, curiously and broadly</h4>
+                          <h4 className="text-white font-semibold mb-2">👉 Learn relentlessly, curiously and broadly</h4>
                           <p className="text-gray-300">I'm chasing understanding. Tech, strategy, people, life. Everything is a system to map, a problem to unpack, or a lesson waiting.</p>
                         </div>
                         <div>
-                          <h4 className="text-white font-semibold mb-2">Connect deeply to understand humanity</h4>
+                          <h4 className="text-white font-semibold mb-2">👉 Connect deeply to understand humanity</h4>
                           <p className="text-gray-300">I value clarity and speed, but also depth. I want to learn what makes people tick, not just in theory, but through shared experiences, stories, and mutual respect.</p>
                         </div>
                       </div>
@@ -236,35 +236,63 @@ export default function AboutMePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               <button
                 onClick={() => openModal({
-                  title: "Technical Skills",
+                  title: "Basics",
                   content: (
                     <div className="space-y-6">
-                      <p className="text-gray-300">My technical expertise spans across various domains of software development and engineering.</p>
-                      <div className="space-y-4">
-                        <div>
-                          <h4 className="text-white font-semibold mb-2">Web Development</h4>
-                          <p className="text-gray-300">Proficient in modern web technologies and frameworks, with a strong focus on building scalable, performant applications. Expert in React.js, Next.js, and the broader JavaScript/TypeScript ecosystem.</p>
-                        </div>
-                        <div>
-                          <h4 className="text-white font-semibold mb-2">Backend & Cloud</h4>
-                          <p className="text-gray-300">Experienced in designing and implementing robust backend systems using Python and Node.js. Well-versed in AWS services and cloud architecture principles.</p>
-                        </div>
-                        <div>
-                          <h4 className="text-white font-semibold mb-2">Data & Analytics</h4>
-                          <p className="text-gray-300">Strong background in data analysis and visualization, using Python's data science stack and modern BI tools to derive meaningful insights from complex datasets.</p>
-                        </div>
-                      </div>
+                      <ul className="space-y-6 text-gray-300">
+                        <li>
+                          <span className="mr-2">👉</span>
+                          I was born and raised in
+                          <a href="https://en.wikipedia.org/wiki/Madrid" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-2 py-1 bg-white text-black text-xs font-medium rounded-md hover:bg-gray-200 transition-colors mx-1">
+                            Madrid
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                          </a>, Spain, in what I proudly call the city's best neighborhood:
+                          <a href="https://es.wikipedia.org/wiki/Arganzuela" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-2 py-1 bg-white text-black text-xs font-medium rounded-md hover:bg-gray-200 transition-colors mx-1">
+                            Arganzuela
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                          </a>.
+                          I'm not technically a "gato"—those born to Madrid-born parents—but this city runs deep in my veins. Its diversity, talent, and vibrant day-to-day life are unmatched, and few places in the world offer the quality of life Spain does. I love this country.
+                        </li>
+                        <li>
+                          <span className="mr-2">👉</span>
+                          Sports have always played a big role in my life. I've dabbled in everything from roller skating to swimming, but basketball was my home court for years. These days, I hit the gym for health and hiking when I want joy and peace. If the time allows it, I go to the mountains, if not, a stroll around Madrid does the job just fine.
+                        </li>
+                        <li>
+                          <span className="mr-2">👉</span>
+                          I'm a passionate traveler. While Spain offers nearly every landscape under the sun, discovering other cultures remains one of my biggest joys. A recent trip to China and Japan blew my mind—two incredible, complex, and inspiring countries that expanded my perspective in ways I'm still processing.
+                        </li>
+                        <li>
+                          <span className="mr-2">👉</span>
+                          Since I was a kid, I've wanted to build things. I used to spend hours dismantling toys, organizing their components, and reassembling them into something new. (I still have boxes full of tiny motors and random circuits.) That builder's mindset stuck with me.
+                        </li>
+                        <li>
+                          <span className="mr-2">👉</span>
+                          Now, I'm working at Amazon, mainly using SQL to build internal tools that help teams across Europe measure and improve employee safety. It's not just technical—it's about enabling people to make better, faster decisions at scale.
+                        </li>
+                        <li>
+                          <span className="mr-2">👉</span>
+                          I've also had the chance to live abroad, in
+                          <a href="https://en.wikipedia.org/wiki/Niort" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-2 py-1 bg-white text-black text-xs font-medium rounded-md hover:bg-gray-200 transition-colors mx-1">
+                            Niort
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                          </a>, France and
+                          <a href="https://en.wikipedia.org/wiki/Eindhoven" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-2 py-1 bg-white text-black text-xs font-medium rounded-md hover:bg-gray-200 transition-colors mx-1">
+                            Eindhoven
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                          </a>, Netherlands. Each place challenged me in unexpected ways and added new layers to how I see the world—and myself.
+                        </li>
+                      </ul>
                     </div>
                   )
                 })}
                 className="bg-gray-900 rounded-lg p-8 text-left transition-all duration-200 hover:bg-gray-800 hover:scale-[1.02] cursor-pointer w-full">
-                <h3 className="text-xl font-semibold mb-4 text-white">Technical Skills</h3>
+                <h3 className="text-xl font-semibold mb-4 text-white">Basics</h3>
                 <ul className="list-disc list-inside space-y-2 text-gray-300">
-                  <li>Full-stack Web Development</li>
-                  <li>React.js & Next.js Ecosystem</li>
-                  <li>TypeScript & JavaScript</li>
-                  <li>Python & Data Analysis</li>
-                  <li>Cloud Services (AWS)</li>
+                  <li>Born and raised in Madrid, Spain</li>
+                  <li>Love reading, traveling, and being outside</li>
+                  <li>Always liked to take things apart and put them back together</li>
+                  <li>Hiking passionate</li>
+                  <li>My love language is prioritization</li>
                 </ul>
               </button>
 
@@ -333,6 +361,31 @@ export default function AboutMePage() {
                   <li>UX/UI Design</li>
                   <li>Sustainable Tech</li>
                   <li>EdTech Solutions</li>
+                </ul>
+              </button>
+
+              <button
+                onClick={() => openModal({
+                  title: "Travelling",
+                  content: (
+                    <div className="space-y-6">
+                      <p className="text-gray-300">Traveling is one of my greatest passions. I love exploring new cultures, meeting people from around the world, and collecting stories and experiences that shape my perspective.</p>
+                      <ul className="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Visited 20+ countries across 4 continents</li>
+                        <li>Solo backpacked through Southeast Asia</li>
+                        <li>Favorite city: Tokyo</li>
+                        <li>Dream destination: Patagonia</li>
+                        <li>Always looking for the next adventure!</li>
+                      </ul>
+                    </div>
+                  )
+                })}
+                className="bg-gray-900 rounded-lg p-8 text-left transition-all duration-200 hover:bg-gray-800 hover:scale-[1.02] cursor-pointer w-full">
+                <h3 className="text-xl font-semibold mb-4 text-white">Travelling</h3>
+                <ul className="list-disc list-inside space-y-2 text-gray-300">
+                  <li>20+ countries visited</li>
+                  <li>Backpacking, road trips, and city breaks</li>
+                  <li>Always planning the next journey</li>
                 </ul>
               </button>
             </div>
