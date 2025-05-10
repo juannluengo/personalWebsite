@@ -298,69 +298,69 @@ export default function AboutMePage() {
 
               <button
                 onClick={() => openModal({
-                  title: "Business Skills",
+                  title: "People I admire",
                   content: (
                     <div className="space-y-6">
-                      <p className="text-gray-300">Beyond technical expertise, I've developed strong business and interpersonal skills essential for successful project delivery.</p>
+                      <p className="text-gray-300">text</p>
                       <div className="space-y-4">
                         <div>
-                          <h4 className="text-white font-semibold mb-2">Project Management</h4>
-                          <p className="text-gray-300">Experienced in leading cross-functional teams, managing project timelines, and ensuring successful delivery of complex technical projects.</p>
+                          <h4 className="text-white font-semibold mb-2">head</h4>
+                          <p className="text-gray-300">text</p>
                         </div>
                         <div>
-                          <h4 className="text-white font-semibold mb-2">Business Analysis</h4>
-                          <p className="text-gray-300">Skilled in analyzing business requirements, identifying opportunities for improvement, and translating business needs into technical solutions.</p>
+                          <h4 className="text-white font-semibold mb-2">head</h4>
+                          <p className="text-gray-300">text</p>
                         </div>
                         <div>
-                          <h4 className="text-white font-semibold mb-2">Communication</h4>
-                          <p className="text-gray-300">Strong ability to communicate complex technical concepts to non-technical stakeholders and maintain effective client relationships.</p>
+                          <h4 className="text-white font-semibold mb-2">head</h4>
+                          <p className="text-gray-300">text</p>
                         </div>
                       </div>
                     </div>
                   )
                 })}
                 className="bg-gray-900 rounded-lg p-8 text-left transition-all duration-200 hover:bg-gray-800 hover:scale-[1.02] cursor-pointer w-full">
-                <h3 className="text-xl font-semibold mb-4 text-white">Business Skills</h3>
+                <h3 className="text-xl font-semibold mb-4 text-white">People I admire</h3>
                 <ul className="list-disc list-inside space-y-2 text-gray-300">
-                  <li>Project Management</li>
-                  <li>Business Analysis</li>
-                  <li>International Relations</li>
-                  <li>Strategic Planning</li>
-                  <li>Client Communication</li>
+                  <li>text</li>
+                  <li>text</li>
+                  <li>text</li>
+                  <li>text</li>
+                  <li>text</li>
                 </ul>
               </button>
 
               <button
                 onClick={() => openModal({
-                  title: "Areas of Interest",
+                  title: "My interests",
                   content: (
                     <div className="space-y-6">
-                      <p className="text-gray-300">I'm passionate about emerging technologies and their potential to create positive change.</p>
+                      <p className="text-gray-300">text</p>
                       <div className="space-y-4">
                         <div>
-                          <h4 className="text-white font-semibold mb-2">AI & Machine Learning</h4>
-                          <p className="text-gray-300">Fascinated by the potential of AI to solve complex problems and create more intelligent systems. Particularly interested in practical applications of machine learning in business contexts.</p>
+                          <h4 className="text-white font-semibold mb-2">head</h4>
+                          <p className="text-gray-300">text</p>
                         </div>
                         <div>
-                          <h4 className="text-white font-semibold mb-2">Blockchain & Web3</h4>
-                          <p className="text-gray-300">Exploring the possibilities of decentralized technologies and their potential to revolutionize various industries, from finance to supply chain management.</p>
+                          <h4 className="text-white font-semibold mb-2">head</h4>
+                          <p className="text-gray-300">text</p>
                         </div>
                         <div>
-                          <h4 className="text-white font-semibold mb-2">Sustainable Technology</h4>
-                          <p className="text-gray-300">Committed to developing and promoting technologies that contribute to environmental sustainability and social responsibility.</p>
+                          <h4 className="text-white font-semibold mb-2">head</h4>
+                          <p className="text-gray-300">text</p>
                         </div>
                       </div>
                     </div>
                   )
                 })}
                 className="bg-gray-900 rounded-lg p-8 text-left transition-all duration-200 hover:bg-gray-800 hover:scale-[1.02] cursor-pointer w-full">
-                <h3 className="text-xl font-semibold mb-4 text-white">Areas of Interest</h3>
+                <h3 className="text-xl font-semibold mb-4 text-white">My interests</h3>
                 <ul className="list-disc list-inside space-y-2 text-gray-300">
-                  <li>AI & Machine Learning</li>
-                  <li>Blockchain Technology</li>
-                  <li>UX/UI Design</li>
-                  <li>Sustainable Tech</li>
-                  <li>EdTech Solutions</li>
+                  <li>text</li>
+                  <li>text</li>
+                  <li>text</li>
+                  <li>text</li>
+                  <li>text</li>
                 </ul>
               </button>
 
@@ -368,22 +368,44 @@ export default function AboutMePage() {
                 onClick={() => openModal({
                   title: "Travelling",
                   content: (
-                    <div className="space-y-6">
-                      <p className="text-gray-300">Traveling is one of my greatest passions. I love exploring new cultures, meeting people from around the world, and collecting stories and experiences that shape my perspective.</p>
-                      <ul className="list-disc list-inside space-y-2 text-gray-300">
-                        <li>Visited 20+ countries across 4 continents</li>
-                        <li>Solo backpacked through Southeast Asia</li>
-                        <li>Favorite city: Tokyo</li>
-                        <li>Dream destination: Patagonia</li>
-                        <li>Always looking for the next adventure!</li>
-                      </ul>
+                    <div>
+                      <p className="text-gray-300 mb-6">
+                        Traveling is one of my greatest passions, and I probably have my mother to thank for that. She was a pioneer in her time, turning her love for exploration into a career at a travel agency. Her explorer spirit and curiosity for the new and unexplored, definitely passed on.
+                      </p>
+                      <p className="text-gray-300 mb-6">
+                        From hiking in the Ethiopian highlands, to a school exchange in Mumbai, to tracing the economic boom in Shenzhen, soaking in the quiet traditions of Kyoto, briefly living the American dream in Maryland, and uncovering hidden gems all across Europe. I've always chased the feeling of discovering something (and someone) new.
+                      </p>
+                      <p className="text-gray-300 mb-6">
+                        Madrid has always been my flight hub, though Eindhoven took over for a year. Every airport feels like a portal. Every map is an invitation. And Ryanair and Iberia my biggest allies.
+                      </p>
+                      <p className="text-gray-300 mb-6">
+                        I genuinely believe you can tell when someone's well-traveled, not by the passport stamps, but by the way they stay calm in unfamiliar situations, approach the world with curiosity, and navigate problems with creativity and empathy. Above all, being well-traveled means being respectful, humble, and deeply curious about how other people live, think, and connect.
+                      </p>
+                      <p className="text-gray-300 mb-6">
+                        I'm a couch surfer at heart. Some of my best trips happened thanks to friends (and friends of friends): a couch in Florence, a school buddy in Beijing, or just raw-dogging the night in Ethiopia, crashing wherever the stars found us.
+                      </p>
+                      <p className="text-gray-300 mb-6">
+                        And that's the beautiful thing about travel: the human connections. We're all in this world together.
+                      </p>
+                      <p className="text-gray-300">
+                        Next stop? Los Angeles, summer 2025, to visit a close friend. And since I'll already be across the Atlantic, I'm swinging by Houston and Mexico City to reconnect with family.
+                      </p>
+                      <div className="relative w-full max-w-5xl h-[40rem] sm:h-[48rem] mx-auto mt-4">
+                        <Image
+                          src={getImagePath('/images/travel/TravelMap2024.png')}
+                          alt="Travel Map 2024"
+                          fill
+                          className="object-contain rounded-lg shadow-lg"
+                          priority
+                        />
+                      </div>
                     </div>
                   )
                 })}
                 className="bg-gray-900 rounded-lg p-8 text-left transition-all duration-200 hover:bg-gray-800 hover:scale-[1.02] cursor-pointer w-full">
                 <h3 className="text-xl font-semibold mb-4 text-white">Travelling</h3>
                 <ul className="list-disc list-inside space-y-2 text-gray-300">
-                  <li>20+ countries visited</li>
+                  <li>The whole world has never been as connected as it is today. I want to see it all.</li>
                   <li>Backpacking, road trips, and city breaks</li>
                   <li>Always planning the next journey</li>
                 </ul>
