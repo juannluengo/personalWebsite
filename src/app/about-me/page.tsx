@@ -75,19 +75,31 @@ export default function AboutMePage() {
                   title: "Core Values",
                   content: (
                     <div className="space-y-6">
-                      <p className="text-gray-300">Our core values shape everything we do and define who we are as individuals and as a team.</p>
+                      <p className="text-gray-300">Our core values shape everything we do and define who we are. Having a clear vision and understanding of them is key to being able to make the right decisions. This is still an ongoing process for me.</p>
                       <div className="space-y-4">
                         <div>
-                          <h4 className="text-white font-semibold mb-2">Continuous Learning</h4>
-                          <p className="text-gray-300">I believe in the power of lifelong learning. Every day presents new opportunities to grow, learn, and improve. Whether it's mastering a new technology, understanding different perspectives, or developing new skills, I embrace each learning opportunity with enthusiasm.</p>
+                          <h4 className="text-white font-semibold mb-2">👉 Respect first, always</h4>
+                          <p className="text-gray-300">I lead with respect. It's non-negotiable. Whether it's collaboration, critique, or conflict, it starts with treating others with dignity.</p>
                         </div>
                         <div>
-                          <h4 className="text-white font-semibold mb-2">Innovation</h4>
-                          <p className="text-gray-300">Innovation is not just about creating something new; it's about finding better solutions to real problems. I constantly challenge myself to think differently and approach problems from unique angles.</p>
+                          <h4 className="text-white font-semibold mb-2">👉 Relentless self-improvement</h4>
+                          <p className="text-gray-300">Every day is a shot at becoming a sharper, stronger, more grounded version of yourself. Personally, professionally and intellectually, there's always room for improvement.</p>
                         </div>
                         <div>
-                          <h4 className="text-white font-semibold mb-2">Collaboration</h4>
-                          <p className="text-gray-300">Great achievements come from working together. I value diverse perspectives and believe that the best solutions emerge from collaborative efforts where different viewpoints and skills come together.</p>
+                          <h4 className="text-white font-semibold mb-2">👉 Family and loved ones as the North Star</h4>
+                          <p className="text-gray-300">No achievement matters if it comes at the cost of your people. Loved ones come first, full stop.</p>
+                        </div>
+                        <div>
+                          <h4 className="text-white font-semibold mb-2">👉 Practicality + velocity</h4>
+                          <p className="text-gray-300">I move fast and smart. Solutions must be actionable, lean, and built for momentum, not over-engineered theory. Most decisiones are two way doors, not one way streets.</p>
+                        </div>
+                        <div>
+                          <h4 className="text-white font-semibold mb-2">👉 Directness and kindness. Together</h4>
+                          <p className="text-gray-300">Say what you mean. Don't sugarcoat, but also, don't be a jerk. Honesty and kindness aren't opposites. Both will save us a lot of time and energy, and will help us build a system.</p>
+                        </div>
+                        <div>
+                          <h4 className="text-white font-semibold mb-2">👉 There's always a better way</h4>
+                          <p className="text-gray-300">Never settling for “good enough” when things can be faster, simpler, or more effective. It's about assuming that improvement is always possible. Hunt friction, even the invisible kind.</p>
                         </div>
                       </div>
                     </div>
@@ -100,22 +112,37 @@ export default function AboutMePage() {
                   <li className="flex items-start">
                     <span className="text-blue-400 mr-2">•</span>
                     <div>
-                      <span className="font-medium text-white">Continuous Learning</span>
-                      <p className="text-gray-300 mt-1">Embracing new challenges and opportunities for growth</p>
+                      <span className="font-medium text-white">Respect first, always</span>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-400 mr-2">•</span>
                     <div>
-                      <span className="font-medium text-white">Innovation</span>
-                      <p className="text-gray-300 mt-1">Thinking outside the box to solve complex problems</p>
+                      <span className="font-medium text-white">Relentless self-improvement</span>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-400 mr-2">•</span>
                     <div>
-                      <span className="font-medium text-white">Collaboration</span>
-                      <p className="text-gray-300 mt-1">Working together to achieve greater results</p>
+                      <span className="font-medium text-white">Family and loved ones as the north star</span>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-400 mr-2">•</span>
+                    <div>
+                      <span className="font-medium text-white">Practicality + velocity</span>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-400 mr-2">•</span>
+                    <div>
+                      <span className="font-medium text-white">Directness and kindness. Together</span>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-400 mr-2">•</span>
+                    <div>
+                      <span className="font-medium text-white">There's always a better way</span>
                     </div>
                   </li>
                 </ul>
@@ -126,19 +153,31 @@ export default function AboutMePage() {
                   title: "Future Goals",
                   content: (
                     <div className="space-y-6">
-                      <p className="text-gray-300">My goals are driven by a desire to make a meaningful impact and push the boundaries of what's possible in technology.</p>
+                      <p className="text-gray-300">My goals are driven by a desire to make a meaningful impact. My greatest achivements will be measured not by the status or money but by the smiles I was able to put on people's faces and the relive I was able to give them.</p>
                       <div className="space-y-4">
                         <div>
-                          <h4 className="text-white font-semibold mb-2">Tech Leadership</h4>
-                          <p className="text-gray-300">Beyond just managing projects, I aim to inspire and guide teams to achieve extraordinary results. This includes fostering an environment of innovation, mentoring the next generation of tech leaders, and driving technological excellence.</p>
+                          <h4 className="text-white font-semibold mb-2">Create meaning with impact</h4>
+                          <p className="text-gray-300">I don't just want to build. I want to make something that matters. A product, a system or a movement. Something that makes people's lives better in real, tangible ways.</p>
                         </div>
                         <div>
-                          <h4 className="text-white font-semibold mb-2">Entrepreneurship</h4>
-                          <p className="text-gray-300">My entrepreneurial spirit drives me to identify opportunities where technology can solve real-world problems. I'm passionate about building solutions that not only succeed commercially but also create positive social impact.</p>
+                          <h4 className="text-white font-semibold mb-2">Leave a mark, not a footprint</h4>
+                          <p className="text-gray-300">I want to exit the world better than I found it. Smarter systems, more human connections and fewer pointless frictions. Legacy through contribution. Individually, on my corner of world, and globally, through the impact of the systems I help create.</p>
                         </div>
                         <div>
-                          <h4 className="text-white font-semibold mb-2">Global Impact</h4>
-                          <p className="text-gray-300">Technology has the power to transform lives globally. I'm committed to working on projects and initiatives that can scale to help people worldwide, whether through innovative software solutions, sustainable technology, or educational platforms.</p>
+                          <h4 className="text-white font-semibold mb-2">Build something people actually use</h4>
+                          <p className="text-gray-300">Not vaporware. Not slides. I want to create things that are used, loved, and even depended on. Where code, design, and vision meet real need.</p>
+                        </div>
+                        <div>
+                          <h4 className="text-white font-semibold mb-2">Fully experience life, not just pass through it</h4>
+                          <p className="text-gray-300">We only get one shot at this. I want to live a life that is worth remembering. Happiness, in all its forms, is everyones goal.</p>
+                        </div>
+                        <div>
+                          <h4 className="text-white font-semibold mb-2">Learn relentlessly, curiously and broadly</h4>
+                          <p className="text-gray-300">I'm chasing understanding. Tech, strategy, people, life. Everything is a system to map, a problem to unpack, or a lesson waiting.</p>
+                        </div>
+                        <div>
+                          <h4 className="text-white font-semibold mb-2">Connect deeply to understand humanity</h4>
+                          <p className="text-gray-300">I value clarity and speed, but also depth. I want to learn what makes people tick, not just in theory, but through shared experiences, stories, and mutual respect.</p>
                         </div>
                       </div>
                     </div>
@@ -151,22 +190,37 @@ export default function AboutMePage() {
                   <li className="flex items-start">
                     <span className="text-blue-400 mr-2">•</span>
                     <div>
-                      <span className="font-medium text-white">Tech Leadership</span>
-                      <p className="text-gray-300 mt-1">Leading innovative projects and mentoring others</p>
+                      <span className="font-medium text-white">Create meaning with impact</span>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-400 mr-2">•</span>
                     <div>
-                      <span className="font-medium text-white">Entrepreneurship</span>
-                      <p className="text-gray-300 mt-1">Building solutions that make a difference</p>
+                      <span className="font-medium text-white">Leave a mark, not a footprint</span>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-400 mr-2">•</span>
                     <div>
-                      <span className="font-medium text-white">Global Impact</span>
-                      <p className="text-gray-300 mt-1">Contributing to meaningful technological advancement</p>
+                      <span className="font-medium text-white">Build something people actually use</span>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-400 mr-2">•</span>
+                    <div>
+                      <span className="font-medium text-white">Fully experience life, not just pass through it</span>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-400 mr-2">•</span>
+                    <div>
+                      <span className="font-medium text-white">Learn relentlessly, curiously and broadly</span>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-400 mr-2">•</span>
+                    <div>
+                      <span className="font-medium text-white">Connect deeply to understand humanity</span>
                     </div>
                   </li>
                 </ul>

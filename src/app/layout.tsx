@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Hi, Juan here",
-  description: "Watch Apple TV+ in the Apple TV app to enjoy critically acclaimed Apple Original shows and movies.",
+  description: "A more personal view of my life, perspective, and projects",
   icons: {
     icon: process.env.NODE_ENV === 'production' 
       ? "/personalWebsite/images/NFTCalavera.png"
